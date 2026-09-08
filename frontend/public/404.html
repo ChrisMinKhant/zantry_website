@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zantry Tech | Enterprise Engineering &amp; Technology Portfolio</title>
+    <script>
+      (function() {
+        var path = window.location.pathname;
+        var repo = '/zantry_website';
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
+        
+        if (path.startsWith(repo)) {
+          var sub = path.slice(repo.length).replace(/^\/+/, '');
+          window.location.replace(repo + '/#' + (sub ? '/' + sub : '') + search + hash);
+        } else {
+          var sub = path.replace(/^\/+/, '');
+          window.location.replace('/#' + (sub ? '/' + sub : '') + search + hash);
+        }
+      })();
+    </script>
+  </head>
+  <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #0f172a; color: #f8fafc;">
+    <div style="text-align: center; padding: 2rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Redirecting...</h2>
+      <p style="color: #94a3b8;">Taking you back to Zantry Tech.</p>
+    </div>
+  </body>
+</html>
