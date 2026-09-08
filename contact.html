@@ -7,109 +7,113 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary-fixed": "#d5e3fd",
-                        "primary": "#000000",
-                        "tertiary-fixed": "#d3e4fe",
-                        "on-tertiary-fixed": "#0b1c30",
-                        "secondary": "#515f74",
-                        "background": "#f7f9fb",
-                        "on-tertiary-fixed-variant": "#38485d",
-                        "on-primary-container": "#7c839b",
-                        "inverse-surface": "#2d3133",
-                        "error-container": "#ffdad6",
-                        "tertiary": "#000000",
-                        "on-background": "#191c1e",
-                        "surface-dim": "#d8dadc",
-                        "error": "#ba1a1a",
-                        "inverse-on-surface": "#eff1f3",
-                        "surface-container-low": "#f2f4f6",
-                        "on-surface-variant": "#45464d",
-                        "on-secondary-fixed-variant": "#3a485c",
-                        "on-primary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-tint": "#565e74",
-                        "primary-fixed": "#dae2fd",
-                        "tertiary-container": "#0b1c30",
-                        "on-surface": "#191c1e",
-                        "surface-container": "#eceef0",
-                        "primary-container": "#131b2e",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "on-tertiary": "#ffffff",
-                        "surface-variant": "#e0e3e5",
-                        "on-secondary-fixed": "#0d1c2f",
-                        "surface-container-high": "#e6e8ea",
-                        "on-error-container": "#93000a",
-                        "on-secondary": "#ffffff",
-                        "secondary-fixed-dim": "#b9c7e0",
-                        "inverse-primary": "#bec6e0",
-                        "surface-container-highest": "#e0e3e5",
-                        "surface-bright": "#f7f9fb",
-                        "on-tertiary-container": "#75859d",
-                        "on-secondary-container": "#57657b",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#d5e3fd",
-                        "primary-fixed-dim": "#bec6e0",
-                        "outline": "#76777d",
-                        "on-primary-fixed": "#131b2e",
-                        "surface": "#f7f9fb",
-                        "outline-variant": "#c6c6cd",
-                        "tertiary-fixed-dim": "#b7c8e1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-xl": "64px",
-                        "margin-desktop": "48px",
-                        "stack-xs": "4px",
-                        "unit": "8px",
-                        "gutter": "24px",
-                        "stack-sm": "8px",
-                        "stack-lg": "32px",
-                        "stack-md": "16px",
-                        "container-max": "1280px",
-                        "margin-mobile": "16px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Inter"],
-                        "headline-xl": ["Inter"],
-                        "display-lg": ["Inter"],
-                        "headline-xl-mobile": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "body-md": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "label-md": ["Inter"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
-                        "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e6e8ea",
+                    "outline-variant": "#c6c6cd",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "on-surface-variant": "#45464d",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d5e3fd",
+                    "primary-fixed": "#dae2fd",
+                    "primary-container": "#131b2e",
+                    "error-container": "#ffdad6",
+                    "surface": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-container": "#7c839b",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "inverse-surface": "#2d3133",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary": "#515f74",
+                    "tertiary": "#000000",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "primary": "#000000",
+                    "surface-variant": "#e0e3e5",
+                    "inverse-primary": "#bec6e0",
+                    "on-background": "#191c1e",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#d3e4fe",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#75859d",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#565e74",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#0b1c30",
+                    "secondary-container": "#d5e3fd",
+                    "outline": "#76777d",
+                    "on-surface": "#191c1e",
+                    "on-secondary-container": "#57657b",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface-bright": "#f7f9fb"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "stack-lg": "32px",
+                    "stack-xl": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "stack-sm": "8px",
+                    "margin-desktop": "48px",
+                    "stack-xs": "4px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
     </script>
 <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
         .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             box-shadow: 0px 4px 24px rgba(15, 23, 42, 0.04);
             border: 1px solid rgba(15, 23, 42, 0.05);
         }
@@ -122,124 +126,161 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md min-h-screen selection:bg-primary-fixed selection:text-primary">
+<body class="bg-background text-on-background font-body-md min-h-screen selection:bg-primary-fixed selection:text-primary overflow-x-hidden">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md border-b border-on-surface/5 dark:border-on-surface-variant/10 shadow-sm">
-<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-<a href="/" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Zantry Tech</a>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="/">Home</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="/services/">Services</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="/portfolio/">Portfolio</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="/process/">Process</a>
-<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-label-md text-label-md" href="/contact/">Contact</a>
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline/5 h-16 sm:h-20 transition-all">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter h-full">
+<a href="/" class="flex items-center gap-2.5 sm:gap-3">
+<img alt="Zantry Tech Logo" class="h-8 w-8 sm:h-10 sm:w-10 rounded-lg object-contain" src="/images/logo.png" onerror="this.src='/favicon.png'"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-base sm:text-headline-md font-bold text-primary tracking-tight leading-none">Zantry Tech</span>
+<span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-secondary mt-0.5">Technology & Lab</span>
 </div>
-<a href="#contactForm" class="bg-primary text-on-primary px-stack-md py-2 rounded-lg font-label-md text-label-md hover:scale-105 active:scale-95 transition-all inline-block">
-                Book Consultation
-            </a>
+</a>
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/">Home</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/services/">Services</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/portfolio/">Portfolio</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/process/">Process</a></li>
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300 font-label-md text-label-md" href="/contact/">Contact</a></li>
+</ul>
+<div class="flex items-center gap-2 sm:gap-4">
+<a href="#contactForm" class="hidden sm:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+    Book Consultation
+</a>
+<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-full transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
+</button>
 </div>
 </nav>
-<main class="pt-32 pb-stack-xl tech-pattern min-h-screen">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="mb-stack-xl text-center md:text-left">
-<h1 class="font-display-lg text-display-lg md:text-display-lg text-headline-xl-mobile mb-4">Ready to Build Something Extraordinary?</h1>
-<p class="text-on-surface-variant font-body-lg text-body-lg max-w-2xl">Connect with our engineering experts to transform your ambitious ideas into precision-crafted digital reality.</p>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobileMenu" class="fixed inset-0 bg-surface/98 backdrop-blur-2xl z-40 transition-all duration-300 flex flex-col md:hidden opacity-0 invisible pointer-events-none px-6 pt-24 pb-8 overflow-y-auto">
+  <ul class="flex flex-col items-center gap-2.5 w-full max-w-xs mx-auto">
+    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Home</a></li>
+    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Services</a></li>
+    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Portfolio</a></li>
+    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Process</a></li>
+    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-2xl text-base font-bold text-primary bg-primary/10 transition-all">Contact</a></li>
+  </ul>
+  <div class="mt-6 w-full max-w-xs mx-auto text-center">
+    <a href="#contactForm" class="block w-full bg-primary text-white py-3.5 px-6 rounded-full text-sm font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+      Book Consultation
+    </a>
+  </div>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+
+<main class="pt-20 sm:pt-24 pb-16 sm:pb-24 tech-pattern min-h-screen">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
+<div class="mb-8 sm:mb-12 text-center md:text-left">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm uppercase tracking-widest text-xs sm:text-label-sm mb-4 sm:mb-6">Get In Touch</span>
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-bold text-primary mb-4 sm:mb-6 leading-tight tracking-tight">Ready to Build Something Extraordinary?</h1>
+<p class="text-on-surface-variant font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg max-w-2xl mx-auto md:mx-0">Connect with our engineering experts to transform your ambitious ideas into precision-crafted digital reality.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter items-start">
 <!-- Left Side: Contact Information -->
-<div class="lg:col-span-5 space-y-stack-lg">
-<div class="glass-card p-stack-lg rounded-xl">
-<div class="space-y-stack-lg">
-<div class="flex items-start gap-stack-md">
-<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined">mail</span>
+<div class="lg:col-span-5 space-y-6 sm:space-y-8">
+<div class="glass-card p-6 sm:p-8 rounded-2xl">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">mail</span>
 </div>
-<div>
-<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-1">Email Us</p>
-<a class="font-headline-md text-headline-md text-primary hover:underline" href="mailto:hello@zantry.tech">hello@zantry.tech</a>
-<p class="text-on-surface-variant text-body-md mt-1">Our team typically responds within 4 business hours.</p>
-</div>
-</div>
-<div class="flex items-start gap-stack-md">
-<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined">call</span>
-</div>
-<div>
-<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-1">Call Support</p>
-<a class="font-headline-md text-headline-md text-primary hover:underline" href="tel:+15551234567">+1 (555) 123-4567</a>
-<p class="text-on-surface-variant text-body-md mt-1">Mon - Fri: 9am to 6pm EST</p>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Email Us</p>
+<a class="text-base sm:text-headline-md font-bold text-primary hover:underline break-all" href="mailto:hello@zantrytech.com">hello@zantrytech.com</a>
+<p class="text-on-surface-variant text-xs sm:text-sm mt-1">Our team typically responds within 4 business hours.</p>
 </div>
 </div>
-<div class="flex items-start gap-stack-md">
-<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined">location_on</span>
+
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">call</span>
 </div>
-<div>
-<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-1">Our HQ</p>
-<p class="font-headline-md text-headline-md text-primary">1200 Innovation Drive</p>
-<p class="text-on-surface-variant text-body-md">Suite 400, Austin, TX 78701</p>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Call Support</p>
+<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:+15551234567">+1 (555) 123-4567</a>
+<p class="text-on-surface-variant text-xs sm:text-sm mt-1">Mon - Fri: 9am to 6pm EST</p>
+</div>
+</div>
+
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Our HQ</p>
+<p class="text-base sm:text-headline-md font-bold text-primary">1200 Innovation Drive</p>
+<p class="text-on-surface-variant text-xs sm:text-sm">Suite 400, Austin, TX 78701</p>
 </div>
 </div>
 </div>
-<div class="mt-stack-xl pt-stack-lg border-t border-outline-variant">
-<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-stack-md">Follow our progress</p>
-<div class="flex gap-stack-md">
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+
+<div class="mt-8 pt-6 border-t border-outline-variant/40">
+<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-3">Follow our progress</p>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Hub">
 <span class="material-symbols-outlined text-[20px]">hub</span>
 </a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Terminal">
 <span class="material-symbols-outlined text-[20px]">terminal</span>
 </a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Share">
 <span class="material-symbols-outlined text-[20px]">share</span>
 </a>
 </div>
 </div>
 </div>
+
 <!-- Subtle Map Placeholder -->
-<div class="h-64 rounded-xl overflow-hidden glass-card relative group">
-<img alt="Location Map" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist, stylized digital map of Austin, Texas, rendered in a high-contrast monochromatic palette of deep navy and soft grays. The map features crisp, geometric lines representing streets and a clean, modern aesthetic that perfectly matches the Zantry Tech brand identity. The mood is sophisticated and professional, illuminated by a subtle digital glow from the primary landmarks." data-location="Austin, Texas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDkfbi5atqjwFG14l6vgqeY4kPe_qZWo9SWFAF4p6DWY-FUm7HJRhCWSt8U9b-AQWwaQX2hYlvgjDfPXSOsBxb2UJNSMOX8tSmml0C_Ux-Nv8KUJA-rI1x99W6S-pNtRn_WvDUm0-jSTlzLS6jMpjGUKe0BYd4H4eATkcLFJNkcR8uWwE4_C48UTpTjOKFF_trWyy9hUVSWzp247fgzUnBuwA3TAmRu0CJToZa3SydOAb6cZTr6CZjgqonjWobsNoXSwTK9_zNk0A"/>
+<div class="h-48 sm:h-64 rounded-2xl overflow-hidden glass-card relative group">
+<img alt="Location Map" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist digital map of Austin, Texas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDkfbi5atqjwFG14l6vgqeY4kPe_qZWo9SWFAF4p6DWY-FUm7HJRhCWSt8U9b-AQWwaQX2hYlvgjDfPXSOsBxb2UJNSMOX8tSmml0C_Ux-Nv8KUJA-rI1x99W6S-pNtRn_WvDUm0-jSTlzLS6jMpjGUKe0BYd4H4eATkcLFJNkcR8uWwE4_C48UTpTjOKFF_trWyy9hUVSWzp247fgzUnBuwA3TAmRu0CJToZa3SydOAb6cZTr6CZjgqonjWobsNoXSwTK9_zNk0A"/>
 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md shadow-lg flex items-center gap-2">
+<div class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold shadow-lg flex items-center gap-2">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
-                                Visit our Studio
-                            </div>
+    Visit our Studio
 </div>
 </div>
 </div>
+</div>
+
 <!-- Right Side: Contact Form -->
 <div class="lg:col-span-7">
-<div class="glass-card p-stack-xl rounded-xl">
-<form id="contactForm" class="space-y-stack-md" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-<div class="space-y-stack-sm">
-<label class="font-label-md text-label-md text-on-surface" for="name">Full Name</label>
-<input class="w-full px-4 py-3 bg-white border border-outline-variant rounded-lg focus:outline-none focus:border-2 focus:border-primary transition-all text-body-md" id="name" name="name" placeholder="John Doe" required="" type="text"/>
+<div class="glass-card p-6 sm:p-8 md:p-10 rounded-2xl">
+<h3 class="text-xl sm:text-2xl font-bold text-primary mb-2">Send us a Message</h3>
+<p class="text-sm text-on-surface-variant mb-6">Fill in the details below and we will get back to you promptly.</p>
+<form id="contactForm" class="space-y-4 sm:space-y-5" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+<div class="space-y-1.5">
+<label class="font-label-md text-xs sm:text-sm font-semibold text-on-surface" for="name">Full Name</label>
+<input class="w-full px-4 py-3 bg-white border border-outline-variant/60 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-base" id="name" name="name" placeholder="John Doe" required="" type="text"/>
 </div>
-<div class="space-y-stack-sm">
-<label class="font-label-md text-label-md text-on-surface" for="email">Email Address</label>
-<input class="w-full px-4 py-3 bg-white border border-outline-variant rounded-lg focus:outline-none focus:border-2 focus:border-primary transition-all text-body-md" id="email" name="email" placeholder="john@example.com" required="" type="email"/>
+<div class="space-y-1.5">
+<label class="font-label-md text-xs sm:text-sm font-semibold text-on-surface" for="email">Email Address</label>
+<input class="w-full px-4 py-3 bg-white border border-outline-variant/60 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-base" id="email" name="email" placeholder="john@example.com" required="" type="email"/>
 </div>
 </div>
-<div class="space-y-stack-sm">
-<label class="font-label-md text-label-md text-on-surface" for="subject">Subject</label>
-<select class="w-full px-4 py-3 bg-white border border-outline-variant rounded-lg focus:outline-none focus:border-2 focus:border-primary transition-all text-body-md" id="subject" name="subject">
+<div class="space-y-1.5">
+<label class="font-label-md text-xs sm:text-sm font-semibold text-on-surface" for="subject">Subject</label>
+<select class="w-full px-4 py-3 bg-white border border-outline-variant/60 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-base" id="subject" name="subject">
 <option>Project Consultation</option>
 <option>Technical Partnership</option>
 <option>Career Opportunities</option>
 <option>General Inquiry</option>
 </select>
 </div>
-<div class="space-y-stack-sm">
-<label class="font-label-md text-label-md text-on-surface" for="message">Your Message</label>
-<textarea class="w-full px-4 py-3 bg-white border border-outline-variant rounded-lg focus:outline-none focus:border-2 focus:border-primary transition-all text-body-md resize-none" id="message" name="message" placeholder="Tell us about your project requirements..." required="" rows="6"></textarea>
+<div class="space-y-1.5">
+<label class="font-label-md text-xs sm:text-sm font-semibold text-on-surface" for="message">Your Message</label>
+<textarea class="w-full px-4 py-3 bg-white border border-outline-variant/60 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-base resize-none" id="message" name="message" placeholder="Tell us about your project requirements..." required="" rows="5"></textarea>
 </div>
-<div class="pt-4">
-<button class="group w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md flex items-center justify-center gap-stack-sm hover:scale-[1.02] active:scale-95 transition-all shadow-lg" type="submit">
-                                    Send Message
-                                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
+<div class="pt-2">
+<button class="group w-full sm:w-auto bg-primary text-on-primary px-8 py-3.5 sm:py-4 rounded-xl font-label-md text-sm sm:text-base font-bold flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-md" type="submit">
+    Send Message
+    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
 </button>
-<p class="text-on-surface-variant text-[12px] mt-4">By sending this message, you agree to our privacy policy regarding data collection.</p>
+<p class="text-on-surface-variant text-xs mt-3">By sending this message, you agree to our privacy policy regarding data collection.</p>
 </div>
 </form>
 </div>
@@ -247,50 +288,88 @@
 </div>
 </div>
 </main>
+
 <!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline w-full rounded-t-xl">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter py-xl max-w-container-max mx-auto">
-<div class="col-span-1 md:col-span-1">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-4">Zantry Tech</div>
-<p class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md">Engineering the future of precision digital solutions.</p>
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline w-full rounded-t-2xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 sm:px-6 md:px-gutter py-12 sm:py-16 max-w-container-max mx-auto">
+<div class="sm:col-span-2 md:col-span-1">
+<div class="flex items-center gap-2.5 mb-3">
+<img alt="Zantry Tech Logo" class="h-7 w-7 rounded-lg object-contain" src="/images/logo.png" onerror="this.src='/favicon.png'"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Zantry Tech</span>
+</div>
+<p class="text-sm sm:text-base text-on-surface-variant dark:text-surface-variant">Engineering the future of precision digital solutions.</p>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-4">Company</h4>
+<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-3 sm:mb-4 uppercase tracking-wider">Company</h4>
 <ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">About</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Portfolio</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Contact</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="/services/">Services</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="/portfolio/">Portfolio</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="/process/">Process</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="/contact/">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-4">Capabilities</h4>
+<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-3 sm:mb-4 uppercase tracking-wider">Legal</h4>
 <ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Services</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Solutions</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-4">Legal</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all font-label-md text-label-md" href="#">Terms of Service</a></li>
-</ul>
+<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-3 sm:mb-4 uppercase tracking-wider">Contact</h4>
+<p class="text-sm sm:text-base text-on-surface-variant dark:text-surface-variant mb-2">hello@zantrytech.com</p>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="language">language</span>
+<span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>
+<span class="material-symbols-outlined text-secondary" data-icon="cloud_done">cloud_done</span>
 </div>
 </div>
-<div class="max-w-container-max mx-auto px-gutter py-6 border-t border-outline-variant/30 text-center">
-<p class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md">© 2024 Zantry Tech. Engineering Excellence.</p>
+</div>
+<div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-4 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface-variant dark:text-surface-variant font-label-md text-xs sm:text-label-md">© 2024 Zantry Tech. Engineering Excellence.</p>
 </div>
 </footer>
+
 <script>
-        // Micro-interaction for form inputs
-        const inputs = document.querySelectorAll('input, textarea, select');
-        inputs.forEach(input => {
-            input.addEventListener('focus', () => {
-                input.parentElement.querySelector('label').style.color = 'var(--primary)';
-            });
-            input.addEventListener('blur', () => {
-                input.parentElement.querySelector('label').style.color = '';
-            });
+  (function() {
+    // Mobile Navigation Toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const icon = document.getElementById('menuIcon');
+    if (btn && menu) {
+      btn.addEventListener('click', function() {
+        const isClosed = menu.classList.contains('invisible');
+        if (isClosed) {
+          menu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'close';
+          document.body.style.overflow = 'hidden';
+        } else {
+          menu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'menu';
+          document.body.style.overflow = '';
+        }
+      });
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          menu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'menu';
+          document.body.style.overflow = '';
         });
-    </script>
+      });
+    }
+
+    // Micro-interaction for form inputs
+    const inputs = document.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        const lbl = input.parentElement.querySelector('label');
+        if (lbl) lbl.classList.add('text-primary');
+      });
+      input.addEventListener('blur', () => {
+        const lbl = input.parentElement.querySelector('label');
+        if (lbl) lbl.classList.remove('text-primary');
+      });
+    });
+  })();
+</script>
 </body></html>

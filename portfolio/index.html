@@ -3,328 +3,417 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio | Zantry Tech - Engineering Excellence</title>
+<title>Portfolio | Zantry Tech</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary-fixed": "#d5e3fd",
-                        "primary": "#000000",
-                        "tertiary-fixed": "#d3e4fe",
-                        "on-tertiary-fixed": "#0b1c30",
-                        "secondary": "#515f74",
-                        "background": "#f7f9fb",
-                        "on-tertiary-fixed-variant": "#38485d",
-                        "on-primary-container": "#7c839b",
-                        "inverse-surface": "#2d3133",
-                        "error-container": "#ffdad6",
-                        "tertiary": "#000000",
-                        "on-background": "#191c1e",
-                        "surface-dim": "#d8dadc",
-                        "error": "#ba1a1a",
-                        "inverse-on-surface": "#eff1f3",
-                        "surface-container-low": "#f2f4f6",
-                        "on-surface-variant": "#45464d",
-                        "on-secondary-fixed-variant": "#3a485c",
-                        "on-primary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-tint": "#565e74",
-                        "primary-fixed": "#dae2fd",
-                        "tertiary-container": "#0b1c30",
-                        "on-surface": "#191c1e",
-                        "surface-container": "#eceef0",
-                        "primary-container": "#131b2e",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "on-tertiary": "#ffffff",
-                        "surface-variant": "#e0e3e5",
-                        "on-secondary-fixed": "#0d1c2f",
-                        "surface-container-high": "#e6e8ea",
-                        "on-error-container": "#93000a",
-                        "on-secondary": "#ffffff",
-                        "secondary-fixed-dim": "#b9c7e0",
-                        "inverse-primary": "#bec6e0",
-                        "surface-container-highest": "#e0e3e5",
-                        "surface-bright": "#f7f9fb",
-                        "on-tertiary-container": "#75859d",
-                        "on-secondary-container": "#57657b",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#d5e3fd",
-                        "primary-fixed-dim": "#bec6e0",
-                        "outline": "#76777d",
-                        "on-primary-fixed": "#131b2e",
-                        "surface": "#f7f9fb",
-                        "outline-variant": "#c6c6cd",
-                        "tertiary-fixed-dim": "#b7c8e1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-xl": "64px",
-                        "margin-desktop": "48px",
-                        "stack-xs": "4px",
-                        "unit": "8px",
-                        "gutter": "24px",
-                        "stack-sm": "8px",
-                        "stack-lg": "32px",
-                        "stack-md": "16px",
-                        "container-max": "1280px",
-                        "margin-mobile": "16px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Inter"],
-                        "headline-xl": ["Inter"],
-                        "display-lg": ["Inter"],
-                        "headline-xl-mobile": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "body-md": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "label-md": ["Inter"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
-                        "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface-variant": "#45464d",
+                    "outline": "#76777d",
+                    "primary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#565e74",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "surface": "#f7f9fb",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#bec6e0",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "on-surface": "#191c1e",
+                    "on-primary-fixed": "#131b2e",
+                    "inverse-on-surface": "#eff1f3",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#d3e4fe",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#0b1c30",
+                    "surface-dim": "#d8dadc",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "background": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-secondary-container": "#57657b",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container-highest": "#e0e3e5",
+                    "tertiary": "#000000",
+                    "secondary": "#515f74",
+                    "secondary-container": "#d5e3fd",
+                    "on-background": "#191c1e",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#7c839b",
+                    "secondary-fixed": "#d5e3fd",
+                    "outline-variant": "#c6c6cd",
+                    "primary-fixed": "#dae2fd",
+                    "primary-container": "#131b2e",
+                    "inverse-surface": "#2d3133",
+                    "surface-variant": "#e0e3e5",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "surface-container": "#eceef0",
+                    "on-tertiary-container": "#75859d",
+                    "on-tertiary-fixed-variant": "#38485d"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "48px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "stack-md": "16px",
+                    "stack-xl": "64px",
+                    "stack-xs": "4px",
+                    "unit": "8px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
     </script>
 <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
         .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             box-shadow: 0px 4px 24px rgba(15, 23, 42, 0.04);
             border: 1px solid rgba(15, 23, 42, 0.05);
-        }
-        .portfolio-hover:hover .hover-overlay {
-            opacity: 1;
-        }
-        .portfolio-hover img {
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .portfolio-hover:hover img {
-            transform: scale(1.05);
         }
         .filter-btn.active {
             background-color: #000000;
             color: #ffffff;
+            border-color: #000000;
         }
     </style>
 </head>
-<body class="text-on-surface">
+<body class="text-on-surface overflow-x-hidden">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md border-b border-on-surface/5 dark:border-on-surface-variant/10 shadow-sm">
-<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-<a href="/" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
-                Zantry Tech
-            </a>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="/">Home</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="/services/">Services</a>
-<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-label-md text-label-md" href="/portfolio/">Portfolio</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="/process/">Process</a>
-<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="/contact/">Contact</a>
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline/5 h-16 sm:h-20 transition-all">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter h-full">
+<a href="/" class="flex items-center gap-2.5 sm:gap-3">
+<img alt="Zantry Tech Logo" class="h-8 w-8 sm:h-10 sm:w-10 rounded-lg object-contain" src="/images/logo.png" onerror="this.src='/favicon.png'"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-base sm:text-headline-md font-bold text-primary tracking-tight leading-none">Zantry Tech</span>
+<span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-secondary mt-0.5">Technology & Lab</span>
 </div>
-<a href="/contact/" class="bg-primary text-on-primary px-stack-lg py-2 rounded-full font-label-md text-label-md transition-all active:scale-95 opacity-90 inline-block">
-                Book Consultation
-            </a>
+</a>
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/">Home</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/services/">Services</a></li>
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300 font-label-md text-label-md" href="/portfolio/">Portfolio</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/process/">Process</a></li>
+<li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/contact/">Contact</a></li>
+</ul>
+<div class="flex items-center gap-2 sm:gap-4">
+<a href="/contact/" class="hidden sm:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+    Book Consultation
+</a>
+<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-full transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
+</button>
 </div>
 </nav>
-<main class="pt-stack-xl mt-stack-xl">
-<!-- Hero Section -->
-<header class="max-w-container-max mx-auto px-gutter mb-stack-xl py-stack-lg text-center">
-<h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Selected Projects</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                Exploring the boundary of technical precision and aesthetic mastery. A showcase of engineering excellence across fintech, cloud, and digital commerce.
-            </p>
 </header>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobileMenu" class="fixed inset-0 bg-surface/98 backdrop-blur-2xl z-40 transition-all duration-300 flex flex-col md:hidden opacity-0 invisible pointer-events-none px-6 pt-24 pb-8 overflow-y-auto">
+  <ul class="flex flex-col items-center gap-2.5 w-full max-w-xs mx-auto">
+    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Home</a></li>
+    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Services</a></li>
+    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-2xl text-base font-bold text-primary bg-primary/10 transition-all">Portfolio</a></li>
+    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Process</a></li>
+    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Contact</a></li>
+  </ul>
+  <div class="mt-6 w-full max-w-xs mx-auto text-center">
+    <a href="/contact/" class="block w-full bg-primary text-white py-3.5 px-6 rounded-full text-sm font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+      Book Consultation
+    </a>
+  </div>
+</div>
+
+<main class="pt-16 sm:pt-20">
+<!-- Hero Section -->
+<header class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-12 sm:py-16 md:py-20 text-center">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm uppercase tracking-widest text-xs sm:text-label-sm mb-4 sm:mb-6">Case Studies</span>
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-bold text-primary mb-4 sm:mb-6 leading-tight tracking-tight">Selected Projects</h1>
+<p class="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+    Exploring the boundary of technical precision and aesthetic mastery. A showcase of engineering excellence across fintech, cloud, and digital commerce.
+</p>
+</header>
+
 <!-- Category Filters -->
-<section class="max-w-container-max mx-auto px-gutter mb-stack-lg flex flex-wrap justify-center gap-stack-sm">
-<button class="filter-btn active px-stack-lg py-2 rounded-full font-label-md text-label-md border border-outline-variant hover:border-primary transition-all duration-300">All</button>
-<button class="filter-btn px-stack-lg py-2 rounded-full font-label-md text-label-md border border-outline-variant hover:border-primary transition-all duration-300">Fintech</button>
-<button class="filter-btn px-stack-lg py-2 rounded-full font-label-md text-label-md border border-outline-variant hover:border-primary transition-all duration-300">E-commerce</button>
-<button class="filter-btn px-stack-lg py-2 rounded-full font-label-md text-label-md border border-outline-variant hover:border-primary transition-all duration-300">Cloud</button>
+<section class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter mb-8 sm:mb-12">
+<div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+<button class="filter-btn active px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">All</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">Fintech</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">E-commerce</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">Cloud</button>
+</div>
 </section>
+
 <!-- Portfolio Grid -->
-<section class="max-w-container-max mx-auto px-gutter pb-stack-xl">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<section class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter pb-16 sm:pb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-gutter">
+
 <!-- Project Card 1: NexGen Analytics -->
-<div class="group relative overflow-hidden rounded-xl glass-card portfolio-hover">
-<div class="aspect-[16/10] overflow-hidden bg-surface-container">
-<img alt="NexGen Analytics Dashboard" class="w-full h-full object-cover" data-alt="A sophisticated data visualization dashboard for a high-end fintech application. The screen displays complex financial charts and real-time market trends in a minimalist, high-contrast UI. The lighting is crisp and modern, reflecting a premium SaaS aesthetic with subtle glassmorphism effects and professional navy blue accents. The overall mood is powerful, organized, and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76Iw4ctKIBIZn3YzWijuyYUN0oscfOcIOIWntPR-bhKPVqTcIg7j1U6X7MYz0eAqRFC_XOmoP33J5C20xS3wRqFQ79q5YZLvcIZQD4aKkIOmbLmiRc7Mm1d9E3pN4GuVrPgjWV_uSlAEoq74rtevjlJcc0C96BHGQIbCX_UtQ6mrznep4p4T4WghVRfATsf3meOAkDCNvCymfp8sQuLu6FS9yrqhrhzDWNM-78ACsw-uOrSjhE3nPVvkWH4jcZL2bALm2TA8E97A"/>
-</div>
-<div class="hover-overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity duration-500 flex flex-col justify-end p-stack-lg text-on-primary">
-<span class="font-label-sm text-label-sm mb-stack-xs opacity-80">FINTECH / DATA</span>
-<h3 class="font-headline-lg text-headline-lg mb-stack-sm">NexGen Analytics</h3>
-<p class="font-body-md text-body-md mb-stack-lg max-w-md">
-                            Revolutionizing real-time market intelligence with a low-latency, cloud-native processing engine and intuitive visualization.
-                        </p>
-<a class="inline-flex items-center gap-2 font-label-md text-label-md group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
+<img alt="NexGen Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated data visualization dashboard for a high-end fintech application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76Iw4ctKIBIZn3YzWijuyYUN0oscfOcIOIWntPR-bhKPVqTcIg7j1U6X7MYz0eAqRFC_XOmoP33J5C20xS3wRqFQ79q5YZLvcIZQD4aKkIOmbLmiRc7Mm1d9E3pN4GuVrPgjWV_uSlAEoq74rtevjlJcc0C96BHGQIbCX_UtQ6mrznep4p4T4WghVRfATsf3meOAkDCNvCymfp8sQuLu6FS9yrqhrhzDWNM-78ACsw-uOrSjhE3nPVvkWH4jcZL2bALm2TA8E97A"/>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">FINTECH / DATA</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">NexGen Analytics</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">Revolutionizing real-time market intelligence with a low-latency, cloud-native processing engine and intuitive visualization.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
 </div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">FINTECH / DATA</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">NexGen Analytics</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">Revolutionizing real-time market intelligence with a low-latency, cloud-native processing engine and intuitive visualization.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
 <!-- Project Card 2: Luxe Retail Experience -->
-<div class="group relative overflow-hidden rounded-xl glass-card portfolio-hover">
-<div class="aspect-[16/10] overflow-hidden bg-surface-container">
-<img alt="Luxe Retail Platform" class="w-full h-full object-cover" data-alt="A high-end e-commerce interface showcasing luxury fashion products. The design is exceptionally clean with generous white space, sharp typography, and high-resolution product photography. The UI elements use subtle ambient shadows and thin outlines, evoking a sense of effortless power and premium craftsmanship. Soft, diffused natural light illuminates the scene, reinforcing a sophisticated and reliable brand image." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDU8grUuNIMuvaEfXO0MOX4ZGp4y9YYjgrCfMHfzHQQY0ZzuZkAXvk0-61kDGo_kFrR_NWTFlx9cz78yuzJiTCyV7BPO001MYdr0UVsSD4y37doOJTRvDtOorcI2KqxvznOGrkcmvYLOAX_5lOcfDfkwdkgUHfszNatXxneqSL84sAkvhDuz7MARMWaMVajCVmwwiETohWnOjcGV6d7qi_3Kk5HX8eNhi_onQI3D2U_1fNB4nofWxLSdaAVbSxQyOVn7G0mHO1v-k"/>
-</div>
-<div class="hover-overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity duration-500 flex flex-col justify-end p-stack-lg text-on-primary">
-<span class="font-label-sm text-label-sm mb-stack-xs opacity-80">E-COMMERCE / UX</span>
-<h3 class="font-headline-lg text-headline-lg mb-stack-sm">Luxe Retail Experience</h3>
-<p class="font-body-md text-body-md mb-stack-lg max-w-md">
-                            A seamless, omnichannel shopping ecosystem for a global fashion brand, prioritizing speed, security, and elegance.
-                        </p>
-<a class="inline-flex items-center gap-2 font-label-md text-label-md group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
+<img alt="Luxe Retail Platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end e-commerce interface showcasing luxury fashion products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDU8grUuNIMuvaEfXO0MOX4ZGp4y9YYjgrCfMHfzHQQY0ZzuZkAXvk0-61kDGo_kFrR_NWTFlx9cz78yuzJiTCyV7BPO001MYdr0UVsSD4y37doOJTRvDtOorcI2KqxvznOGrkcmvYLOAX_5lOcfDfkwdkgUHfszNatXxneqSL84sAkvhDuz7MARMWaMVajCVmwwiETohWnOjcGV6d7qi_3Kk5HX8eNhi_onQI3D2U_1fNB4nofWxLSdaAVbSxQyOVn7G0mHO1v-k"/>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">E-COMMERCE / UX</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">Luxe Retail Experience</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">A seamless, omnichannel shopping ecosystem for a global fashion brand, prioritizing speed, security, and elegance.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
 </div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">E-COMMERCE / UX</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">Luxe Retail Experience</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">A seamless, omnichannel shopping ecosystem for a global fashion brand, prioritizing speed, security, and elegance.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
 <!-- Project Card 3: Cloud Architect -->
-<div class="group relative overflow-hidden rounded-xl glass-card portfolio-hover">
-<div class="aspect-[16/10] overflow-hidden bg-surface-container">
-<img alt="Cloud Infrastructure Visualization" class="w-full h-full object-cover" data-alt="An abstract, futuristic visualization of cloud infrastructure and network nodes. Glowing digital lines and nodes connect in a complex, 3D geometric pattern against a deep navy blue background. The lighting is cinematic with vibrant cyan and white highlights. The style is hyper-modern and sleek, representing technical precision and engineering excellence in a minimalist, professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5dX59UuVsNYx_FlX1n4w7q7XNqMyrIGgV7ubByue4MwcgBPNeNSan_HiYkrXXm7Os6ETwtXNyN_4b2wne8gUdoCeLACOhS64UNtzyR857cT_QE6VmIEsU--VS9s4pKrz2Iac7XHXM6EekkyrwFf447UjZjNVbKfX_FPuqj2aFzJQucHLStgNZW7bhv62sKBbrygcke7YHwwtWI9d7AcMIwLogPhMFFZ8FczW7aFJjaZB9Oh7Ptiaau19Wklj4cO9oA7VGwkSAf_M"/>
-</div>
-<div class="hover-overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity duration-500 flex flex-col justify-end p-stack-lg text-on-primary">
-<span class="font-label-sm text-label-sm mb-stack-xs opacity-80">CLOUD / INFRASTRUCTURE</span>
-<h3 class="font-headline-lg text-headline-lg mb-stack-sm">Scale-Free Architecture</h3>
-<p class="font-body-md text-body-md mb-stack-lg max-w-md">
-                            Architecting a resilient, auto-scaling backend infrastructure for a high-traffic SaaS startup using serverless technologies.
-                        </p>
-<a class="inline-flex items-center gap-2 font-label-md text-label-md group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
+<img alt="Cloud Infrastructure Visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An abstract, futuristic visualization of cloud infrastructure and network nodes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5dX59UuVsNYx_FlX1n4w7q7XNqMyrIGgV7ubByue4MwcgBPNeNSan_HiYkrXXm7Os6ETwtXNyN_4b2wne8gUdoCeLACOhS64UNtzyR857cT_QE6VmIEsU--VS9s4pKrz2Iac7XHXM6EekkyrwFf447UjZjNVbKfX_FPuqj2aFzJQucHLStgNZW7bhv62sKBbrygcke7YHwwtWI9d7AcMIwLogPhMFFZ8FczW7aFJjaZB9Oh7Ptiaau19Wklj4cO9oA7VGwkSAf_M"/>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">CLOUD / INFRASTRUCTURE</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">Scale-Free Architecture</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">Architecting a resilient, auto-scaling backend infrastructure for a high-traffic SaaS startup using serverless technologies.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
 </div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">CLOUD / INFRASTRUCTURE</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">Scale-Free Architecture</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">Architecting a resilient, auto-scaling backend infrastructure for a high-traffic SaaS startup using serverless technologies.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
 <!-- Project Card 4: Crypto Wallet -->
-<div class="group relative overflow-hidden rounded-xl glass-card portfolio-hover">
-<div class="aspect-[16/10] overflow-hidden bg-surface-container">
-<img alt="Crypto Wallet Interface" class="w-full h-full object-cover" data-alt="A minimalist mobile crypto wallet interface showing asset balances and transaction history. The design uses a monochromatic palette of whites and grays with deep navy accents. The UI features razor-sharp typography and rounded card components with very soft ambient shadows. The overall aesthetic is clean, secure, and futuristic, following the highest standards of fintech product design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7L8oSDYuzwSFzmFOVN200AcxyijItNKg-CZ9-9NtjYzCqeW_9mSDRt5N7liMtNM1b0ZDnr-j9r_2NvgEuov48OfhH6dNtKi0H95hxhK7k3MOxpBqpj6uy02dvoynoNysSWu054hMJBXyrS-Ts64PkHncgoOlip74zDlEEkK-5xJO9WGvje9yQWNw17xlf3r-7laCI2qNr62m2stPMiK2LSjLk9IyfctmHUXvJAGFwLAg65k6tU4CuodSLZF7AEwpcYnQ9cLIzbXc"/>
-</div>
-<div class="hover-overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity duration-500 flex flex-col justify-end p-stack-lg text-on-primary">
-<span class="font-label-sm text-label-sm mb-stack-xs opacity-80">FINTECH / WEB3</span>
-<h3 class="font-headline-lg text-headline-lg mb-stack-sm">Aether Wallet</h3>
-<p class="font-body-md text-body-md mb-stack-lg max-w-md">
-                            Defining the next generation of digital asset management with a focus on institutional-grade security and user simplicity.
-                        </p>
-<a class="inline-flex items-center gap-2 font-label-md text-label-md group/link" href="#">
-                            View Case Study 
-                            <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
+<img alt="Crypto Wallet Interface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist mobile crypto wallet interface showing asset balances." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7L8oSDYuzwSFzmFOVN200AcxyijItNKg-CZ9-9NtjYzCqeW_9mSDRt5N7liMtNM1b0ZDnr-j9r_2NvgEuov48OfhH6dNtKi0H95hxhK7k3MOxpBqpj6uy02dvoynoNysSWu054hMJBXyrS-Ts64PkHncgoOlip74zDlEEkK-5xJO9WGvje9yQWNw17xlf3r-7laCI2qNr62m2stPMiK2LSjLk9IyfctmHUXvJAGFwLAg65k6tU4CuodSLZF7AEwpcYnQ9cLIzbXc"/>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">FINTECH / WEB3</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">Aether Wallet</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">Defining the next generation of digital asset management with a focus on institutional-grade security and user simplicity.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
 </div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">FINTECH / WEB3</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">Aether Wallet</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">Defining the next generation of digital asset management with a focus on institutional-grade security and user simplicity.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="/contact/">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
 </div>
 </section>
+
 <!-- CTA Section -->
-<section class="bg-primary py-stack-xl">
-<div class="max-w-container-max mx-auto px-gutter text-center">
-<h2 class="font-headline-xl text-headline-xl text-on-primary mb-stack-md">Ready to build your vision?</h2>
-<p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-lg max-w-xl mx-auto">
-                    We partner with ambitious companies to engineer the future of digital products. Let's discuss your next breakthrough project.
-                </p>
-<div class="flex flex-col sm:flex-row gap-stack-md justify-center">
-<button class="bg-on-primary text-primary px-stack-xl py-3 rounded-full font-label-md text-label-md hover:opacity-90 transition-all active:scale-95">
-                        Start a Project
-                    </button>
-<button class="border border-on-primary text-on-primary px-stack-xl py-3 rounded-full font-label-md text-label-md hover:bg-on-primary hover:text-primary transition-all active:scale-95">
-                        Our Expertise
-                    </button>
+<section class="bg-primary py-12 sm:py-16 md:py-stack-xl">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter text-center">
+<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-on-primary mb-3 sm:mb-stack-md">Ready to build your vision?</h2>
+<p class="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-primary/70 mb-6 sm:mb-stack-lg max-w-xl mx-auto">
+    We partner with ambitious companies to engineer the future of digital products. Let's discuss your next breakthrough project.
+</p>
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-stack-md justify-center max-w-xs sm:max-w-none mx-auto">
+<a href="/contact/" class="w-full sm:w-auto bg-on-primary text-primary px-8 py-3.5 rounded-full font-label-md font-bold hover:opacity-90 transition-all active:scale-95 text-center">
+    Start a Project
+</a>
+<a href="/services/" class="w-full sm:w-auto border border-on-primary text-on-primary px-8 py-3.5 rounded-full font-label-md font-bold hover:bg-on-primary hover:text-primary transition-all active:scale-95 text-center">
+    Our Expertise
+</a>
 </div>
 </div>
 </section>
 </main>
+
 <!-- Footer -->
-<footer class="w-full rounded-t-xl bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter py-xl max-w-container-max mx-auto">
-<div class="flex flex-col gap-stack-md">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
-                    Zantry Tech
-                </div>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">
-                    Engineering Excellence. Premium Craftsmanship for Digital Products.
-                </p>
+<footer class="w-full rounded-t-2xl bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 sm:px-6 md:px-gutter py-12 sm:py-16 max-w-container-max mx-auto">
+<div class="sm:col-span-2 md:col-span-1">
+<div class="flex items-center gap-2.5 mb-3">
+<img alt="Zantry Tech Logo" class="h-7 w-7 rounded-lg object-contain" src="/images/logo.png" onerror="this.src='/favicon.png'"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">Zantry Tech</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant">
+    Engineering Excellence. Premium Craftsmanship for Digital Products.
+</p>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim mb-stack-md uppercase tracking-wider">Navigation</h4>
-<ul class="flex flex-col gap-stack-sm">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-body-md text-body-md" href="#">Services</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-body-md text-body-md" href="#">Solutions</a></li>
-<li><a class="text-primary dark:text-primary-fixed underline font-body-md text-body-md" href="#">Portfolio</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-body-md text-body-md" href="#">About</a></li>
+<h4 class="font-label-md text-label-md text-primary font-bold mb-3 sm:mb-stack-md uppercase tracking-wider">Navigation</h4>
+<ul class="flex flex-col gap-2 sm:gap-stack-sm">
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="/services/">Services</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="/portfolio/">Portfolio</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="/process/">Process</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="/contact/">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim mb-stack-md uppercase tracking-wider">Legal</h4>
-<ul class="flex flex-col gap-stack-sm">
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-body-md text-body-md" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-body-md text-body-md" href="#">Terms of Service</a></li>
+<h4 class="font-label-md text-label-md text-primary font-bold mb-3 sm:mb-stack-md uppercase tracking-wider">Legal</h4>
+<ul class="flex flex-col gap-2 sm:gap-stack-sm">
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim mb-stack-md uppercase tracking-wider">Newsletter</h4>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-stack-md">Insights on engineering and design excellence.</p>
-<div class="flex gap-2">
-<input class="bg-surface border-outline-variant rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Email address" type="email"/>
-<button class="bg-primary text-on-primary p-2 rounded-lg aspect-square flex items-center justify-center">
-<span class="material-symbols-outlined">send</span>
-</button>
+<h4 class="font-label-md text-label-md text-primary font-bold mb-3 sm:mb-stack-md uppercase tracking-wider">Contact</h4>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-3">hello@zantrytech.com</p>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="language">language</span>
+<span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>
+<span class="material-symbols-outlined text-secondary" data-icon="cloud_done">cloud_done</span>
 </div>
 </div>
 </div>
-<div class="max-w-container-max mx-auto px-gutter py-stack-md border-t border-outline-variant/30 text-center">
-<p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant">
-                © 2024 Zantry Tech. Engineering Excellence.
-            </p>
+<div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-4 border-t border-outline-variant/30 text-center">
+<p class="font-label-md text-xs sm:text-label-md text-on-surface-variant">
+    © 2024 Zantry Tech. Engineering Excellence.
+</p>
 </div>
 </footer>
-<script>
-        // Simple micro-interaction for filter buttons
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                // Add a small scale animation
-                btn.classList.add('scale-95');
-                setTimeout(() => btn.classList.remove('scale-95'), 100);
-            });
-        });
 
-        // Atmospheric parallax effect for project images on scroll
-        window.addEventListener('scroll', () => {
-            const images = document.querySelectorAll('.portfolio-hover img');
-            images.forEach(img => {
-                const rect = img.getBoundingClientRect();
-                const inView = rect.top < window.innerHeight && rect.bottom > 0;
-                if (inView) {
-                    const speed = 0.05;
-                    const yPos = -(rect.top * speed);
-                    img.style.transform = `translateY(${yPos}px) scale(1.1)`;
-                }
-            });
+<script>
+  (function() {
+    // Mobile Navigation Toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const icon = document.getElementById('menuIcon');
+    if (btn && menu) {
+      btn.addEventListener('click', function() {
+        const isClosed = menu.classList.contains('invisible');
+        if (isClosed) {
+          menu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'close';
+          document.body.style.overflow = 'hidden';
+        } else {
+          menu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'menu';
+          document.body.style.overflow = '';
+        }
+      });
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          menu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+          if (icon) icon.textContent = 'menu';
+          document.body.style.overflow = '';
         });
-    </script>
+      });
+    }
+
+    // Filter Buttons
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        btn.classList.add('scale-95');
+        setTimeout(() => btn.classList.remove('scale-95'), 100);
+      });
+    });
+  })();
+</script>
 </body></html>
