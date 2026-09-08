@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Process | Zantry Tech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#d5e3fd",
+                    "primary": "#000000",
+                    "tertiary-fixed": "#d3e4fe",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "secondary": "#515f74",
+                    "background": "#f7f9fb",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "on-primary-container": "#7c839b",
+                    "inverse-surface": "#2d3133",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#000000",
+                    "on-background": "#191c1e",
+                    "surface-dim": "#d8dadc",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface-variant": "#45464d",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#565e74",
+                    "primary-fixed": "#dae2fd",
+                    "tertiary-container": "#0b1c30",
+                    "on-surface": "#191c1e",
+                    "surface-container": "#eceef0",
+                    "primary-container": "#131b2e",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "inverse-primary": "#bec6e0",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary-container": "#75859d",
+                    "on-secondary-container": "#57657b",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#d5e3fd",
+                    "primary-fixed-dim": "#bec6e0",
+                    "outline": "#76777d",
+                    "on-primary-fixed": "#131b2e",
+                    "surface": "#f7f9fb",
+                    "outline-variant": "#c6c6cd",
+                    "tertiary-fixed-dim": "#b7c8e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-xl": "64px",
+                    "margin-desktop": "48px",
+                    "stack-xs": "4px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "stack-md": "16px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 4px 24px rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(15, 23, 42, 0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, transparent, #000 15%, #000 85%, transparent);
+        }
+    </style>
+</head>
+<body class="text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md border-b border-on-surface/5 dark:border-on-surface-variant/10 shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Zantry Tech</div>
+<div class="hidden md:flex gap-stack-lg">
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Solutions</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Portfolio</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-stack-md py-2 rounded-lg font-label-md hover:scale-95 transition-all">Book Consultation</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-stack-xl mt-24 mb-stack-xl px-gutter max-w-container-max mx-auto text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container mb-4 block">Our Methodology</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary mb-6">Our Transparent Delivery Process</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            At Zantry Tech, engineering rigour meets strategic vision. We translate complex requirements into high-performance digital infrastructure through a systematic four-stage lifecycle.
+        </p>
+</header>
+<!-- Process Timeline -->
+<main class="max-w-container-max mx-auto px-gutter pb-24 relative">
+<!-- Central Line for Desktop -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px timeline-line -translate-x-1/2 opacity-20"></div>
+<div class="space-y-24">
+<!-- Step 1: Discovery -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 flex justify-end md:pr-16 order-2 md:order-1">
+<div class="glass-card p-8 rounded-xl max-w-md transition-transform hover:-translate-y-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="search">search</span>
+<h3 class="font-headline-md text-headline-md text-primary">Discovery</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            We begin with deep immersion into your business logic. Our architects conduct stakeholder interviews and technical audits to identify bottlenecks and define high-impact objectives.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">System Audit</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">Stakeholder Interviews</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary font-headline-lg order-1 md:order-2 mb-8 md:mb-0">01</div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<div class="hidden md:block">
+<img class="rounded-xl shadow-lg w-full aspect-video object-cover" data-alt="A professional team of engineers in a bright, high-end office space, engaged in a collaborative brainstorming session around a minimalist glass table. The atmosphere is focused and sophisticated, with neutral tones, soft natural lighting, and a feeling of high-level strategic planning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL1bJfRcBAFbE-e3KQrGaeT0kGvQMPBei-eCnFMlLgVcbqo6s2YLFFrsjBxz6I3RpwoHDhD-Ccxh_6e4xvxBBO7x7d_vEMFLIvn-y_MMpu6orJ9HoV49WFwTydL8fOWeHobv2odK9Y18N48xAmQo8SxRQ_Lp40dMNhp2gNaDNV-jhOfvsVyPgdH1KuPbgEksIXK0aMFwxypmq5ja-ZpdaLCI6X6EpGESIcYYErNEECsULkC5rbdbh3xWij9Jq96t_spi_PKzzuXYE"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Design -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-16 order-3 md:order-3">
+<div class="hidden md:block">
+<img class="rounded-xl shadow-lg w-full aspect-video object-cover" data-alt="Close-up of a high-resolution tablet displaying a complex UI design system with clean grids and subtle glassmorphism effects. The workspace is pristine and modern, illuminated by a soft desk lamp that highlights the sharp typography and elegant interface components." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-LLnQK5aTR2IQy24RHRh1eEUw8zPKhAzSfaBr17BuIUoiLBfE2NUJTvcthstf22TWKCpnPHagLUUYQoQaWg7ZtgRmwUjVs6l4e0uV_GR7LVDkRxPQZY5rGI6lHvhMyaB76zfphv9xKUG9H3yLwP5p8_rK6WptGLQGUi-bnVmLFv1ptS_fFr65kJOhGqaE1ScnH_qn9rhfqWKw1tNoaQ5k7jBBmYUmB86FF95sThj136xUrN2Mkf7GK3Erqea4ADsdRbtZWO5nU-8"/>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary font-headline-lg order-1 md:order-2 mb-8 md:mb-0">02</div>
+<div class="md:w-1/2 flex justify-start md:pl-16 order-2 md:order-1">
+<div class="glass-card p-8 rounded-xl max-w-md transition-transform hover:-translate-y-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture">architecture</span>
+<h3 class="font-headline-md text-headline-md text-primary">Design</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Engineering excellence begins with blueprint precision. We design scalable system architectures and intuitive user interfaces that balance technical performance with effortless usability.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">High-Fidelity UI</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">Schema Design</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3: Development -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 flex justify-end md:pr-16 order-2 md:order-1">
+<div class="glass-card p-8 rounded-xl max-w-md transition-transform hover:-translate-y-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="code">code</span>
+<h3 class="font-headline-md text-headline-md text-primary">Development</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Our engineers write clean, maintainable, and highly optimized code. We follow rigorous Agile sprints, incorporating continuous integration and peer-reviewed pull requests.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">Modern Stack</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">Performance First</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary font-headline-lg order-1 md:order-2 mb-8 md:mb-0">03</div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<div class="hidden md:block">
+<img class="rounded-xl shadow-lg w-full aspect-video object-cover" data-alt="A minimalist developer workspace with a dual-monitor setup showing clean, well-structured lines of code in a dark mode editor. The lighting is cool and focused, creating an atmosphere of deep concentration and technical mastery. The aesthetic is sharp and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF8OmpDgFXUGccwKQjXOE9ecONt6hxgjKWFkk3JgHZTIGNB9UV92YiQBTD3Qb7ta1bOBh4VLTHPa-jxwz32DtiGeszir1_3elbhQY2oVE45678NkslPbPd7FZhngLuXKmbiPLrYG5qC2Yu4KQSg31C0bWnpJqRND4Wva_gvaNJvJTqTztMMMIXhs3lLK9SkxX01YFTf60CvkAbK8TOhG9M5_NW7C5Mxs1IzWX5Ctg2ZIqow3vrS-KK7wG0egY2ZBXTzXLoUqkx-3o"/>
+</div>
+</div>
+</div>
+<!-- Step 4: Deployment -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-16 order-3 md:order-3">
+<div class="hidden md:block">
+<img class="rounded-xl shadow-lg w-full aspect-video object-cover" data-alt="A futuristic data center visualization featuring sleek, glowing blue servers and digital network lines representing global connectivity. The image is high-contrast, clean, and conveys a sense of immense power and reliability in a professional technological landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjkfYXkB8t82CXqQgxDN-VVZ4307GlyFBudu4jj_L1K7e3cFdkI6Wdik1rHG4sKHX4P_Jw5k138mUpWwNzAdPEFx-WBCmZqArQcKDycoMpPVlGZepAlxM6n_LrkAudJdjfX6U5HKlMcMAwh3cdVxsVe6bYnNmPqWGFNEIpAI2_d_38xGzRtShz5yC_CZT53UHtosMSZqPZ94le8-Llnwx7gsYLTNmBhqx-sb7cBtbD0AxKOT_lN9vaJxpPIZ9W09ZLwRIpMomqzP8"/>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-center w-16 h-16 rounded-full bg-primary text-on-primary font-headline-lg order-1 md:order-2 mb-8 md:mb-0">04</div>
+<div class="md:w-1/2 flex justify-start md:pl-16 order-2 md:order-1">
+<div class="glass-card p-8 rounded-xl max-w-md transition-transform hover:-translate-y-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="font-headline-md text-headline-md text-primary">Deployment</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Deployment is not the end, but the beginning. We perform automated testing, stress tests, and zero-downtime migrations to ensure a seamless transition to production environments.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">CI/CD Pipelines</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm">Post-Launch Support</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Rigour Section -->
+<section class="bg-surface-container py-24 px-gutter">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-12">Engineering Rigour as Standard</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-6 bg-surface-container-lowest rounded-xl text-left border border-outline-variant">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center rounded-lg mb-4">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">Security-First</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Encrypted by design. We implement industry-leading security protocols at every layer of the application.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl text-left border border-outline-variant">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center rounded-lg mb-4">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">Optimized Latency</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Milliseconds matter. Our systems are optimized for lightning-fast performance across global networks.</p>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl text-left border border-outline-variant">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center rounded-lg mb-4">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">99.9% Reliability</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Engineered for uptime. Robust redundancy and failover mechanisms ensure continuous business operation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface w-full rounded-t-xl border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-gutter py-xl max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-4">Zantry Tech</div>
+<p class="text-on-surface-variant dark:text-surface-variant max-w-sm">Engineering excellence and premium digital craftsmanship for the next generation of SaaS enterprises.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary mb-2">Company</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Portfolio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Services</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary mb-2">Legal</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface-variant dark:text-surface-variant font-label-md">© 2024 Zantry Tech. Engineering Excellence.</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for timeline steps on scroll
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.relative.flex-col').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

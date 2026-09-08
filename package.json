@@ -1,0 +1,16 @@
+{
+  "name": "zantry-tech-web",
+  "version": "1.0.0",
+  "description": "Zantry Tech Premium Business Tech Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install --prefix frontend",
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "deploy": "npm run deploy --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
