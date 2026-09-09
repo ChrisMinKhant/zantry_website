@@ -634,7 +634,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-[10px] sm:text-xs text-on-primary/60">Email Inquiry</div>
-                      <a href="mailto:hello@zantry.tech" className="font-bold text-xs sm:text-sm hover:underline">hello@zantry.tech</a>
+                      <a href="mailto:zantrytech@gmail.com" className="font-bold text-xs sm:text-sm hover:underline">zantrytech@gmail.com</a>
                     </div>
                   </div>
 
@@ -644,7 +644,10 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-[10px] sm:text-xs text-on-primary/60">Direct Office</div>
-                      <a href="tel:+15551234567" className="font-bold text-xs sm:text-sm hover:underline">+1 (555) 123-4567</a>
+                      <div className="flex flex-wrap gap-x-2">
+                        <a href="tel:+959965157402" className="font-bold text-xs sm:text-sm hover:underline">+959965157402</a>,
+                        <a href="tel:+959790383481" className="font-bold text-xs sm:text-sm hover:underline">+959790383481</a>
+                      </div>
                     </div>
                   </div>
 

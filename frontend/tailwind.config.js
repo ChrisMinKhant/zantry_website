@@ -10,7 +10,8 @@ export default {
       "colors": {
         "on-tertiary-fixed": "#0b1c30",
         "surface": "#f7f9fb",
-        "primary": "#000000",
+        "primary": "rgba(19, 41, 64, 1)",
+        "title": "rgba(19, 41, 64, 1)",
         "on-tertiary-container": "#75859d",
         "primary-container": "#131b2e",
         "inverse-on-surface": "#eff1f3",

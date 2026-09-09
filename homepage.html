@@ -16,7 +16,8 @@
             "colors": {
                     "on-tertiary-fixed": "#0b1c30",
                     "surface": "#f7f9fb",
-                    "primary": "#000000",
+                    "primary": "rgba(19, 41, 64, 1)",
+                    "title": "rgba(19, 41, 64, 1)",
                     "on-tertiary-container": "#75859d",
                     "primary-container": "#131b2e",
                     "inverse-on-surface": "#eff1f3",
@@ -119,6 +120,13 @@
         .hero-gradient {
             background: radial-gradient(circle at 70% 30%, rgba(211, 228, 254, 0.5) 0%, rgba(247, 249, 251, 1) 100%);
         }
+        h1:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h2:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h3:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h4:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h5:not([class*="text-white"]):not([class*="text-on-primary"]) {
+            color: rgba(19, 41, 64, 1);
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
@@ -175,7 +183,7 @@
                         Pioneering Digital Solutions
                     </span>
 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg text-primary mb-4 sm:mb-6 leading-tight tracking-tight font-bold">
-                        Building Smart Software for <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Modern Businesses</span>
+                        Building Smart Software for <span class="text-transparent bg-clip-text bg-gradient-to-r from-[rgba(19,41,64,1)] via-[#1d4ed8] to-[#2563eb]">Modern Businesses</span>
 </h1>
 <p class="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-surface-variant mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0">
                         Empowering enterprises with scalable cloud architecture, intuitive user experiences, and cutting-edge engineering precision. We turn complex challenges into seamless digital products.
@@ -478,11 +486,14 @@
 <div class="space-y-4 sm:space-y-6 text-sm sm:text-base">
 <div class="flex items-center gap-3 sm:gap-4">
 <span class="material-symbols-outlined text-lg sm:text-2xl">mail</span>
-<span class="font-body-md">hello@zantrytech.com</span>
+<a href="mailto:zantrytech@gmail.com" class="font-body-md hover:underline">zantrytech@gmail.com</a>
 </div>
 <div class="flex items-center gap-3 sm:gap-4">
 <span class="material-symbols-outlined text-lg sm:text-2xl">call</span>
-<span class="font-body-md">+1 (555) 123-4567</span>
+<div class="flex flex-wrap items-center gap-x-2 font-body-md">
+<a href="tel:+959965157402" class="hover:underline">+959965157402</a>,
+<a href="tel:+959790383481" class="hover:underline">+959790383481</a>
+</div>
 </div>
 <div class="flex items-center gap-3 sm:gap-4">
 <span class="material-symbols-outlined text-lg sm:text-2xl">location_on</span>

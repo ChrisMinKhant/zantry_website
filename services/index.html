@@ -14,7 +14,8 @@
           extend: {
             "colors": {
                     "secondary-fixed": "#d5e3fd",
-                    "primary": "#000000",
+                    "primary": "rgba(19, 41, 64, 1)",
+                    "title": "rgba(19, 41, 64, 1)",
                     "tertiary-fixed": "#d3e4fe",
                     "on-tertiary-fixed": "#0b1c30",
                     "secondary": "#515f74",
@@ -116,9 +117,16 @@
             box-shadow: 0px 4px 24px rgba(15, 23, 42, 0.04);
         }
         .nav-active {
-            color: #000000;
+            color: rgba(19, 41, 64, 1);
             font-weight: 700;
-            border-bottom: 2px solid #000000;
+            border-bottom: 2px solid rgba(19, 41, 64, 1);
+        }
+        h1:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h2:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h3:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h4:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h5:not([class*="text-white"]):not([class*="text-on-primary"]) {
+            color: rgba(19, 41, 64, 1);
         }
         .reveal {
             opacity: 0;
@@ -352,7 +360,7 @@
 </div>
 <div>
 <h5 class="font-label-md text-label-md font-bold text-primary mb-3 sm:mb-stack-sm uppercase tracking-wider">Contact</h5>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-3">hello@zantrytech.com</p>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-3"><a href="mailto:zantrytech@gmail.com" class="hover:underline">zantrytech@gmail.com</a></p>
 <div class="flex gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="language">language</span>
 <span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>

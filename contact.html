@@ -37,7 +37,8 @@
                     "secondary": "#515f74",
                     "tertiary": "#000000",
                     "tertiary-fixed-dim": "#b7c8e1",
-                    "primary": "#000000",
+                    "primary": "rgba(19, 41, 64, 1)",
+                    "title": "rgba(19, 41, 64, 1)",
                     "surface-variant": "#e0e3e5",
                     "inverse-primary": "#bec6e0",
                     "on-background": "#191c1e",
@@ -124,6 +125,13 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        h1:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h2:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h3:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h4:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h5:not([class*="text-white"]):not([class*="text-on-primary"]) {
+            color: rgba(19, 41, 64, 1);
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen selection:bg-primary-fixed selection:text-primary overflow-x-hidden">
@@ -190,7 +198,7 @@
 </div>
 <div class="min-w-0 flex-1">
 <p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Email Us</p>
-<a class="text-base sm:text-headline-md font-bold text-primary hover:underline break-all" href="mailto:hello@zantrytech.com">hello@zantrytech.com</a>
+<a class="text-base sm:text-headline-md font-bold text-primary hover:underline break-all" href="mailto:zantrytech@gmail.com">zantrytech@gmail.com</a>
 <p class="text-on-surface-variant text-xs sm:text-sm mt-1">Our team typically responds within 4 business hours.</p>
 </div>
 </div>
@@ -201,7 +209,11 @@
 </div>
 <div class="min-w-0 flex-1">
 <p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Call Support</p>
-<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:+15551234567">+1 (555) 123-4567</a>
+<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:+959965157402">+959965157402</a>
+<span class="text-secondary hidden sm:inline">•</span>
+<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:+959790383481">+959790383481</a>
+</div>
 <p class="text-on-surface-variant text-xs sm:text-sm mt-1">Mon - Fri: 9am to 6pm EST</p>
 </div>
 </div>
@@ -317,7 +329,7 @@
 </div>
 <div>
 <h4 class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim font-bold mb-3 sm:mb-4 uppercase tracking-wider">Contact</h4>
-<p class="text-sm sm:text-base text-on-surface-variant dark:text-surface-variant mb-2">hello@zantrytech.com</p>
+<p class="text-sm sm:text-base text-on-surface-variant dark:text-surface-variant mb-2"><a href="mailto:zantrytech@gmail.com" class="hover:underline">zantrytech@gmail.com</a></p>
 <div class="flex gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="language">language</span>
 <span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>

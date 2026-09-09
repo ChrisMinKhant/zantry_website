@@ -61,8 +61,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-secondary">General &amp; Technical Inquiries</div>
-                  <a className="text-sm sm:text-base font-bold text-primary hover:underline block mt-0.5" href="mailto:hello@zantry.tech">
-                    hello@zantry.tech
+                  <a className="text-sm sm:text-base font-bold text-primary hover:underline block mt-0.5" href="mailto:zantrytech@gmail.com">
+                    zantrytech@gmail.com
                   </a>
                   <p className="text-[11px] sm:text-xs text-on-surface-variant mt-1">Directly reviewed by senior partners within 4 hours.</p>
                 </div>
@@ -74,9 +74,15 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-secondary">Direct Telephone</div>
-                  <a className="text-sm sm:text-base font-bold text-primary hover:underline block mt-0.5" href="tel:+15551234567">
-                    +1 (555) 123-4567
-                  </a>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 mt-0.5">
+                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:+959965157402">
+                      +959965157402
+                    </a>
+                    <span className="hidden sm:inline text-secondary">•</span>
+                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:+959790383481">
+                      +959790383481
+                    </a>
+                  </div>
                   <p className="text-[11px] sm:text-xs text-on-surface-variant mt-1">Monday – Friday, 9:00 AM – 6:00 PM EST.</p>
                 </div>
               </div>

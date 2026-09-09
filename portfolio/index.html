@@ -16,7 +16,8 @@
                     "surface-container-low": "#f2f4f6",
                     "on-surface-variant": "#45464d",
                     "outline": "#76777d",
-                    "primary": "#000000",
+                    "primary": "rgba(19, 41, 64, 1)",
+                    "title": "rgba(19, 41, 64, 1)",
                     "on-secondary": "#ffffff",
                     "surface-tint": "#565e74",
                     "error": "#ba1a1a",
@@ -118,9 +119,16 @@
             border: 1px solid rgba(15, 23, 42, 0.05);
         }
         .filter-btn.active {
-            background-color: #000000;
+            background-color: rgba(19, 41, 64, 1);
             color: #ffffff;
-            border-color: #000000;
+            border-color: rgba(19, 41, 64, 1);
+        }
+        h1:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h2:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h3:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h4:not([class*="text-white"]):not([class*="text-on-primary"]),
+        h5:not([class*="text-white"]):not([class*="text-on-primary"]) {
+            color: rgba(19, 41, 64, 1);
         }
     </style>
 </head>
@@ -361,7 +369,7 @@
 </div>
 <div>
 <h4 class="font-label-md text-label-md text-primary font-bold mb-3 sm:mb-stack-md uppercase tracking-wider">Contact</h4>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-3">hello@zantrytech.com</p>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-3"><a href="mailto:zantrytech@gmail.com" class="hover:underline">zantrytech@gmail.com</a></p>
 <div class="flex gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="language">language</span>
 <span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>
