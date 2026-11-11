@@ -79,69 +79,44 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Interactive Mockup Card */}
+          {/* Hero POS Ad Mockup Card */}
           <div className="relative mt-4 lg:mt-0">
-            <div className="glass-card p-4 sm:p-6 rounded-2xl sm:rounded-3xl relative z-10 border border-outline-variant/30 shadow-xl sm:shadow-2xl">
-              {/* Browser/Window Header */}
-              <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-outline-variant/20 mb-3 sm:mb-4">
-                <div className="flex items-center gap-1.5 sm:gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-                </div>
-                <span className="text-[10px] sm:text-xs font-mono text-on-surface-variant truncate max-w-[150px] sm:max-w-none">
-                  zantry.core.telemetry/v2
-                </span>
-                <span className="px-1.5 py-0.5 rounded text-[9px] sm:text-[11px] font-bold bg-green-100 text-green-800">
-                  HEALTHY
-                </span>
-              </div>
-
-              {/* Dashboard Preview Graphic */}
-              <div className="space-y-3 sm:space-y-4">
-                <div className="grid grid-cols-3 gap-2 sm:gap-3">
-                  <div className="p-2.5 sm:p-3 bg-surface-container rounded-xl text-center sm:text-left">
-                    <div className="text-[9px] sm:text-[11px] text-on-surface-variant uppercase font-semibold">Throughput</div>
-                    <div className="text-sm sm:text-lg font-bold text-primary mt-0.5">42.8k <span className="text-[9px] sm:text-xs font-normal text-secondary">req/s</span></div>
+            <Link to="/portfolio" className="block group">
+              <div className="glass-card p-3 sm:p-5 rounded-2xl sm:rounded-3xl relative z-10 border border-primary/20 shadow-xl sm:shadow-2xl hover:shadow-primary/20 transition-all duration-300 bg-gradient-to-b from-white to-surface">
+                {/* Window Header */}
+                <div className="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-3">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                    <span className="text-[10px] sm:text-xs font-bold text-primary ml-1">Zantry POS Pro</span>
                   </div>
-                  <div className="p-2.5 sm:p-3 bg-surface-container rounded-xl text-center sm:text-left">
-                    <div className="text-[9px] sm:text-[11px] text-on-surface-variant uppercase font-semibold">P99 Latency</div>
-                    <div className="text-sm sm:text-lg font-bold text-primary mt-0.5">14.2 <span className="text-[9px] sm:text-xs font-normal text-secondary">ms</span></div>
-                  </div>
-                  <div className="p-2.5 sm:p-3 bg-surface-container rounded-xl text-center sm:text-left">
-                    <div className="text-[9px] sm:text-[11px] text-on-surface-variant uppercase font-semibold">Error Rate</div>
-                    <div className="text-sm sm:text-lg font-bold text-primary mt-0.5">0.001<span className="text-[9px] sm:text-xs font-normal text-secondary">%</span></div>
-                  </div>
+                  <span className="px-2 py-0.5 rounded-full text-[9px] sm:text-[11px] font-bold bg-primary text-white shadow-sm flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    Featured POS Ad
+                  </span>
                 </div>
 
-                <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden bg-primary/95 text-on-primary p-3.5 sm:p-5 flex flex-col justify-between">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="text-[9px] sm:text-xs text-on-primary/60 font-mono">LIVE CLUSTER METRICS</div>
-                      <div className="text-xs sm:text-base font-bold truncate">Multi-Region Kubernetes Ingress</div>
+                {/* POS Ad Image */}
+                <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-slate-900 shadow-md">
+                  <img
+                    src="/images/zantry-pos-ad-clean.jpg"
+                    alt="Zantry POS Commercial Advertisement - Simplify Your Business"
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent flex items-end justify-between gap-2">
+                    <div className="text-white text-left">
+                      <p className="text-[11px] sm:text-xs font-bold leading-tight">Simplify Your Business</p>
+                      <p className="text-[10px] text-white/80 hidden sm:block">Starting from 200,000 MMK · Multi-Device Ready</p>
                     </div>
-                    <span className="material-symbols-outlined text-green-400 text-sm sm:text-base">sensors</span>
-                  </div>
-
-                  {/* Simulated telemetry bar chart */}
-                  <div className="flex items-end gap-1.5 sm:gap-2 h-14 sm:h-20 pt-2">
-                    {[40, 65, 55, 80, 70, 95, 85, 90, 75, 88, 92, 100].map((val, idx) => (
-                      <div key={idx} className="flex-1 flex flex-col justify-end h-full">
-                        <div 
-                          className="w-full bg-gradient-to-t from-blue-500 to-indigo-300 rounded-t transition-all duration-500"
-                          style={{ height: `${val}%` }}
-                        ></div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center justify-between text-[9px] sm:text-xs text-on-primary/70 pt-2 border-t border-on-primary/10">
-                    <span className="truncate">US-East • EU • APAC</span>
-                    <span className="text-green-300 font-mono">Sync: 100% OK</span>
+                    <span className="bg-white text-primary text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full group-hover:bg-primary group-hover:text-white transition-colors flex items-center gap-1 shadow shrink-0">
+                      Explore Plans <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
+          </div>
 
             {/* Decorative background blurs */}
             <div className="absolute -top-6 -right-6 w-48 sm:w-72 h-48 sm:h-72 bg-secondary-fixed/40 rounded-full blur-2xl sm:blur-3xl -z-10 pointer-events-none"></div>

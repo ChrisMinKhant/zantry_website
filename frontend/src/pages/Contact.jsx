@@ -73,17 +73,17 @@ export default function Contact() {
                   <span className="material-symbols-outlined text-xl">call</span>
                 </div>
                 <div>
-                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-secondary">Direct Telephone</div>
+                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-secondary">Direct Telephone &amp; POS Hotline</div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 mt-0.5">
-                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:+959965157402">
-                      +959965157402
+                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:09660227671">
+                      09660227671
                     </a>
                     <span className="hidden sm:inline text-secondary">•</span>
-                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:+959790383481">
-                      +959790383481
+                    <a className="text-sm sm:text-base font-bold text-primary hover:underline block" href="tel:09790383481">
+                      09790383481
                     </a>
                   </div>
-                  <p className="text-[11px] sm:text-xs text-on-surface-variant mt-1">Monday – Friday, 9:00 AM – 6:00 PM EST.</p>
+                  <p className="text-[11px] sm:text-xs text-on-surface-variant mt-1">Daily Support &amp; POS Consultations.</p>
                 </div>
               </div>
 

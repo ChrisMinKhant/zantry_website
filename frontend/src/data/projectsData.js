@@ -1,5 +1,48 @@
 export const projectsData = [
   {
+    id: 'zantry-pos-pro',
+    title: 'Zantry POS Pro - Cloud & Offline Point-of-Sale Ecosystem',
+    client: 'In-House Flagship Product / Retail & Dining',
+    category: 'Fintech',
+    categoryLabel: 'POINT OF SALE / FINTECH & RETAIL',
+    tagline: 'အချိန်၊ နေရာမရွေး Device မရွေး — Universal multi-platform POS system with offline-first reliability.',
+    summary: 'A resilient, low-latency point-of-sale platform running natively on iOS, Android, Windows, macOS, and Web. Operates 100% offline with zero sales interruption and synchronizes to cloud analytics with weekly automated backups.',
+    image: '/images/zantry-pos-ad-clean.jpg',
+    gallery: [
+      '/images/zantry-pos-ad-clean.jpg',
+      '/images/zantry-pos-overview.jpg',
+      '/images/zantry-pos-mobile.jpg',
+      '/images/zantry-pos-banner.jpg'
+    ],
+    tags: ['Cross-Platform', 'Offline First', 'Cloud Sync', 'Real-time Analytics', 'iOS & Android', 'Windows POS', 'Receipt Printing'],
+    year: '2025',
+    timeline: 'Flagship Platform',
+    featured: true,
+    metrics: [
+      { label: 'Device Cost', value: '0 MMK', change: 'Use Existing Hardware' },
+      { label: 'Starter License', value: '200K MMK', change: '1-Time Purchase' },
+      { label: 'Offline Availability', value: '100%', change: 'Zero Downtime' }
+    ],
+    challenge: 'Retailers, coffee shops, and restaurants in Myanmar frequently face unreliable internet connectivity and exorbitant upfront costs for proprietary, bulky POS hardware terminals.',
+    solution: 'Architected an offline-first point-of-sale engine allowing cashiers to ring up sales and print receipts on standard tablets and smartphones without internet, paired with automated cloud sync, daily revenue analytics, and weekly backups.',
+    keyFeatures: [
+      'Security-First Offline Architecture: Full cashier functions without internet',
+      'Multi-Platform Compatibility: Seamlessly runs on iOS, Android, Windows, Mac & Web',
+      'Live Revenue & Inventory Analytics: Shift cash-in/out tracking and comprehensive sales reports',
+      'Automated Weekly Cloud Backup with instant multi-branch data recovery',
+      'Flexible pricing models: Lite Version (200,000 MMK 1-time), Full Cloud (16 Lakh/yr), and On-Premise PC Security Setup (15 Lakh MMK)'
+    ],
+    contactInfo: {
+      hotline: '09660227671 / 09790383481',
+      website: 'zantrytech.com'
+    },
+    testimonial: {
+      quote: 'POS လေးသုံးဖို့အတွက် Device တွေထပ်ဝယ်နေဦးမှာလား? အချိန်၊ နေရာမရွေး Device မရွေး အသုံးပြုရအလွယ်ဆုံး POS — We deployed Zantry POS on our existing tablets and phones in 10 minutes with zero hardware headaches.',
+      author: 'Retail & Cafe Partners',
+      role: 'Flagship Deployment, Yangon'
+    }
+  },
+  {
     id: 'nexgen-analytics',
     title: 'NexGen Quantitative Analytics',
     client: 'Apex Capital Partners',

@@ -190,19 +190,288 @@
 <!-- Category Filters -->
 <section class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter mb-8 sm:mb-12">
 <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
-<button class="filter-btn active px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">All</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">Fintech</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">E-commerce</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300">Cloud</button>
+<button class="filter-btn active px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="all">All</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="pos">Point of Sale (POS)</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="fintech">Fintech</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="ecommerce">E-commerce</button>
+<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="cloud">Cloud</button>
+</div>
+</section>
+
+<!-- Flagship Product Spotlight: Zantry POS Pro -->
+<section id="zantry-pos" class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter mb-16 sm:mb-20">
+<div class="glass-card rounded-3xl border border-primary/20 overflow-hidden shadow-xl bg-gradient-to-b from-white via-surface to-surface-container-low p-6 sm:p-8 md:p-12 relative">
+  <!-- Top Badge -->
+  <div class="flex flex-wrap items-center justify-between gap-4 mb-6 sm:mb-8 pb-6 border-b border-outline-variant/30">
+    <div class="flex items-center gap-2.5">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        Flagship Product
+      </span>
+      <span class="text-xs sm:text-sm font-semibold text-secondary uppercase tracking-widest">Fintech & Retail Suite</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:09660227671" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:underline bg-primary/5 px-3 py-1.5 rounded-full">
+        <span class="material-symbols-outlined text-base">call</span> 09660227671 / 09790383481
+      </a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
+    <!-- Left: Image Gallery & Previews -->
+    <div class="lg:col-span-7 flex flex-col gap-4">
+      <!-- Main Featured Image Container -->
+      <div class="relative group rounded-2xl overflow-hidden bg-slate-900 border border-outline-variant/40 shadow-lg cursor-pointer" onclick="openImageModal(document.getElementById('posMainImg').src, 'Zantry POS Pro Showcase')">
+        <img id="posMainImg" src="/images/zantry-pos-overview.jpg" alt="Zantry POS Multi-Platform & Pricing Overview" class="w-full h-auto aspect-square sm:aspect-[4/3] md:aspect-[16/10] object-contain sm:object-cover transition-transform duration-500 group-hover:scale-[1.02]"/>
+        <div class="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+          <span class="bg-black/75 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-full flex items-center gap-2 backdrop-blur-sm">
+            <span class="material-symbols-outlined text-base">zoom_in</span> Click to Enlarge Full View
+          </span>
+        </div>
+        <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md text-white text-[11px] sm:text-xs px-3 py-1 rounded-full font-medium" id="posImageCaption">
+          Multi-Platform System, Architecture & Pricing
+        </div>
+      </div>
+
+      <!-- Thumbnails Switcher -->
+      <div class="grid grid-cols-4 gap-2 sm:gap-2.5">
+        <button type="button" onclick="switchPosImage('/images/zantry-pos-ad-clean.jpg', 'Commercial Checkout & Dashboard Setup', this)" class="pos-thumb active-thumb rounded-xl overflow-hidden border-2 border-primary ring-2 ring-primary/30 transition-all p-1 bg-white">
+          <img src="/images/zantry-pos-ad-clean.jpg" alt="Commercial Checkout" class="w-full aspect-[4/3] object-cover rounded-lg"/>
+          <span class="block text-[10px] sm:text-xs font-semibold text-center mt-1 text-primary truncate">Commercial Ad</span>
+        </button>
+        <button type="button" onclick="switchPosImage('/images/zantry-pos-overview.jpg', 'Multi-Platform System, Architecture & Pricing', this)" class="pos-thumb rounded-xl overflow-hidden border-2 border-outline-variant/40 hover:border-primary transition-all p-1 bg-white">
+          <img src="/images/zantry-pos-overview.jpg" alt="Overview & Pricing" class="w-full aspect-[4/3] object-cover rounded-lg"/>
+          <span class="block text-[10px] sm:text-xs font-semibold text-center mt-1 text-on-surface-variant truncate">Overview & Plans</span>
+        </button>
+        <button type="button" onclick="switchPosImage('/images/zantry-pos-mobile.jpg', 'Mobile POS & Cross-Device Compatibility', this)" class="pos-thumb rounded-xl overflow-hidden border-2 border-outline-variant/40 hover:border-primary transition-all p-1 bg-white">
+          <img src="/images/zantry-pos-mobile.jpg" alt="Mobile POS App" class="w-full aspect-[4/3] object-cover rounded-lg"/>
+          <span class="block text-[10px] sm:text-xs font-semibold text-center mt-1 text-on-surface-variant truncate">Mobile POS</span>
+        </button>
+        <button type="button" onclick="switchPosImage('/images/zantry-pos-banner.jpg', 'Studio Hardware & Dashboard Setup', this)" class="pos-thumb rounded-xl overflow-hidden border-2 border-outline-variant/40 hover:border-primary transition-all p-1 bg-white">
+          <img src="/images/zantry-pos-banner.jpg" alt="Hardware Setup" class="w-full aspect-[4/3] object-cover rounded-lg"/>
+          <span class="block text-[10px] sm:text-xs font-semibold text-center mt-1 text-on-surface-variant truncate">Studio Setup</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Product Description & Value Proposition -->
+    <div class="lg:col-span-5 flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mb-3 leading-tight tracking-tight">
+          Zantry POS | Simplify Your Business
+        </h2>
+        <div class="p-3.5 rounded-xl bg-primary/5 border border-primary/10 mb-4">
+          <p class="text-sm font-semibold text-primary leading-relaxed">
+            POS လေးသုံးဖို့အတွက် Device တွေထပ်ဝယ်နေဦးမှာလား?
+          </p>
+          <p class="text-xs sm:text-sm text-secondary font-medium mt-1">
+            အချိန်၊ နေရာမရွေး Device မရွေး အသုံးပြုရအလွယ်ဆုံး POS — Run on any tablet, mobile phone, laptop, or desktop you already own.
+          </p>
+        </div>
+        <p class="text-sm sm:text-base text-on-surface-variant mb-6 leading-relaxed">
+          Zantry POS Pro is built from the ground up for grocery, cafe, restaurant, and boutique businesses. It bridges offline resilience with real-time multi-branch cloud analytics, ensuring operations never stop during network interruptions.
+        </p>
+
+        <!-- 4 Core Pillars -->
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <div class="p-3 rounded-xl bg-surface border border-outline-variant/30 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">shield</span>
+            <div>
+              <h5 class="text-xs sm:text-sm font-bold text-primary">Security First</h5>
+              <p class="text-[11px] text-on-surface-variant">Full Offline Setup; works without internet.</p>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-surface border border-outline-variant/30 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">devices</span>
+            <div>
+              <h5 class="text-xs sm:text-sm font-bold text-primary">Multi-Platform</h5>
+              <p class="text-[11px] text-on-surface-variant">iOS, Android, Windows, macOS & Web.</p>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-surface border border-outline-variant/30 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">monitoring</span>
+            <div>
+              <h5 class="text-xs sm:text-sm font-bold text-primary">Comprehensive Reports</h5>
+              <p class="text-[11px] text-on-surface-variant">Real-time daily revenue & sales charts.</p>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-surface border border-outline-variant/30 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5">cloud_sync</span>
+            <div>
+              <h5 class="text-xs sm:text-sm font-bold text-primary">Weekly Data Backup</h5>
+              <p class="text-[11px] text-on-surface-variant">Continuous automated cloud syncing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTAs & App Store Badges -->
+      <div>
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-4">
+          <a href="/contact/" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-label-md text-sm font-bold hover:opacity-95 shadow-md active:scale-95 transition-all text-center">
+            <span class="material-symbols-outlined text-base">calendar_month</span> Book Demo & Consultation
+          </a>
+          <a href="tel:09660227671" class="inline-flex items-center justify-center gap-2 border border-primary text-primary px-5 py-3 rounded-xl font-label-md text-sm font-bold hover:bg-primary/5 active:scale-95 transition-all text-center">
+            <span class="material-symbols-outlined text-base">phone_in_talk</span> 09660227671
+          </a>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-on-surface-variant font-medium">
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-emerald-600">check</span> 3-Month to 1-Year Support</span>
+          <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-emerald-600">check</span> Free Consultation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transparent Pricing Plans Grid -->
+  <div class="mt-8 pt-8 border-t border-outline-variant/30">
+    <div class="text-center max-w-xl mx-auto mb-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-primary">Transparent Pricing Plans</h3>
+      <p class="text-xs sm:text-sm text-on-surface-variant mt-1">Select the ideal deployment model for your retail or food & beverage business.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <!-- Lite Version -->
+      <div class="rounded-2xl p-6 bg-white border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-3">Starter</span>
+          <h4 class="text-lg font-bold text-primary">Lite Version</h4>
+          <div class="my-3">
+            <span class="text-2xl sm:text-3xl font-extrabold text-primary">200,000</span>
+            <span class="text-sm font-bold text-secondary"> MMK</span>
+            <span class="block text-xs text-on-surface-variant mt-0.5">1-Time Purchase</span>
+          </div>
+          <p class="text-xs text-on-surface-variant mb-4">Perfect for single-device counters, pop-ups, and boutique stores starting digital.</p>
+          <ul class="space-y-2 text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> Single Device License</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> 3-Month Technical Support</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> Offline Cashier & Printing</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> Local Daily Sales Summary</li>
+          </ul>
+        </div>
+        <a href="/contact/" class="w-full text-center py-2.5 px-4 rounded-xl border border-primary text-primary font-bold text-xs hover:bg-primary/5 transition-colors">
+          Inquire Lite Plan
+        </a>
+      </div>
+
+      <!-- Full Cloud Plan (Featured) -->
+      <div class="rounded-2xl p-6 bg-primary text-white border-2 border-primary shadow-lg relative flex flex-col justify-between">
+        <span class="absolute -top-3 right-6 bg-amber-400 text-slate-900 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+          Most Popular
+        </span>
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider mb-3">Multi-Device Cloud</span>
+          <h4 class="text-lg font-bold text-white">Full Cloud Plan</h4>
+          <div class="my-3">
+            <span class="text-2xl sm:text-3xl font-extrabold text-white">16 Lakh</span>
+            <span class="text-sm font-semibold text-white/80"> MMK / Year</span>
+            <span class="block text-xs text-white/70 mt-0.5">Or 1.5 Lakh MMK / Month (28 Lakh / 2 Yrs)</span>
+          </div>
+          <p class="text-xs text-white/80 mb-4">Complete cloud ecosystem with automated backups, real-time analytics, and updates.</p>
+          <ul class="space-y-2 text-xs text-white/90 mb-6">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-300">check_circle</span> Multi-Platform (iOS, Android, Web)</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-300">check_circle</span> All Software Updates &amp; Support Included</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-300">check_circle</span> Automated Cloud Data Backup</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-300">check_circle</span> Multi-Branch Inventory &amp; Live Reports</li>
+          </ul>
+        </div>
+        <a href="/contact/" class="w-full text-center py-2.5 px-4 rounded-xl bg-white text-primary font-bold text-xs hover:bg-white/90 shadow-md active:scale-95 transition-all">
+          Get Full Cloud
+        </a>
+      </div>
+
+      <!-- Security Setup Plan -->
+      <div class="rounded-2xl p-6 bg-white border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-3">On-Premise</span>
+          <h4 class="text-lg font-bold text-primary">Security Setup</h4>
+          <div class="my-3">
+            <span class="text-2xl sm:text-3xl font-extrabold text-primary">15 Lakh</span>
+            <span class="text-sm font-bold text-secondary"> MMK</span>
+            <span class="block text-xs text-on-surface-variant mt-0.5">On-Premise Dedicated PC</span>
+          </div>
+          <p class="text-xs text-on-surface-variant mb-4">Tailored for maximum local data privacy, high security, and dedicated physical PC installations.</p>
+          <ul class="space-y-2 text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> On-Premise PC Deployment</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> 1-Year Dedicated Technical Support</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> High-Security Local Database</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span> Custom Hardware &amp; Printer Pairing</li>
+          </ul>
+        </div>
+        <a href="/contact/" class="w-full text-center py-2.5 px-4 rounded-xl border border-primary text-primary font-bold text-xs hover:bg-primary/5 transition-colors">
+          Inquire Security Setup
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 
 <!-- Portfolio Grid -->
 <section class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter pb-16 sm:pb-24">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-gutter" id="portfolioProjectsGrid">
 
-<!-- Project Card 1: NexGen Analytics -->
-<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<!-- Project Card 1: Zantry POS Pro (Flagship) -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-primary/20 flex flex-col project-card" data-category="pos fintech">
+<div class="aspect-[16/10] overflow-hidden bg-slate-900 relative">
+<img alt="Zantry POS Pro Multi-Platform System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/images/zantry-pos-overview.jpg"/>
+<span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow">Featured POS</span>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">POINT OF SALE / FINTECH</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">Zantry POS Pro</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">Cross-platform offline &amp; cloud POS system for retail and cafes with multi-device synchronization and comprehensive reporting.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="#zantry-pos">
+    View Product Details 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">POINT OF SALE / FINTECH</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">Zantry POS Pro</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">Cross-platform offline &amp; cloud POS system with real-time analytics, automated cloud backup, and single/multi-device setups.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="#zantry-pos">
+    View Product Details 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
+<!-- Project Card 2: Zantry POS Mobile Experience -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col project-card" data-category="pos fintech">
+<div class="aspect-[16/10] overflow-hidden bg-slate-900 relative">
+<img alt="Zantry POS Mobile App & Onboarding" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/images/zantry-pos-mobile.jpg"/>
+<!-- Desktop Hover Overlay -->
+<div class="hidden md:flex absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex-col justify-end p-8 text-on-primary">
+<span class="font-label-sm text-xs mb-2 opacity-80 uppercase tracking-wider">MOBILE / UX</span>
+<h3 class="font-headline-lg text-2xl font-bold mb-2 text-white">Zantry POS Mobile &amp; Onboarding</h3>
+<p class="font-body-md text-sm mb-6 max-w-md text-white/80">အချိန်၊ နေရာမရွေး Device မရွေး — Intuitive cashier sign-in and mobile workflow operating on iPhone, Android, and Windows.</p>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-semibold text-white group/link hover:underline" href="#zantry-pos">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Mobile Visible Details -->
+<div class="md:hidden p-5 bg-surface flex flex-col flex-1 justify-between">
+<div>
+<span class="font-label-sm text-xs font-semibold text-secondary uppercase tracking-wider block mb-1">MOBILE / UX</span>
+<h3 class="font-headline-md text-lg font-bold text-primary mb-2">Zantry POS Mobile</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-4">အချိန်၊ နေရာမရွေး Device မရွေး အသုံးပြုရအလွယ်ဆုံး POS — Effortless mobile cashier experience without buying expensive terminals.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-sm font-bold text-primary hover:underline" href="#zantry-pos">
+    View Case Study 
+    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+
+<!-- Project Card 3: NexGen Analytics -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col project-card" data-category="fintech">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
 <img alt="NexGen Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated data visualization dashboard for a high-end fintech application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76Iw4ctKIBIZn3YzWijuyYUN0oscfOcIOIWntPR-bhKPVqTcIg7j1U6X7MYz0eAqRFC_XOmoP33J5C20xS3wRqFQ79q5YZLvcIZQD4aKkIOmbLmiRc7Mm1d9E3pN4GuVrPgjWV_uSlAEoq74rtevjlJcc0C96BHGQIbCX_UtQ6mrznep4p4T4WghVRfATsf3meOAkDCNvCymfp8sQuLu6FS9yrqhrhzDWNM-78ACsw-uOrSjhE3nPVvkWH4jcZL2bALm2TA8E97A"/>
 <!-- Desktop Hover Overlay -->
@@ -230,8 +499,8 @@
 </div>
 </div>
 
-<!-- Project Card 2: Luxe Retail Experience -->
-<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<!-- Project Card 4: Luxe Retail Experience -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col project-card" data-category="ecommerce">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
 <img alt="Luxe Retail Platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end e-commerce interface showcasing luxury fashion products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDU8grUuNIMuvaEfXO0MOX4ZGp4y9YYjgrCfMHfzHQQY0ZzuZkAXvk0-61kDGo_kFrR_NWTFlx9cz78yuzJiTCyV7BPO001MYdr0UVsSD4y37doOJTRvDtOorcI2KqxvznOGrkcmvYLOAX_5lOcfDfkwdkgUHfszNatXxneqSL84sAkvhDuz7MARMWaMVajCVmwwiETohWnOjcGV6d7qi_3Kk5HX8eNhi_onQI3D2U_1fNB4nofWxLSdaAVbSxQyOVn7G0mHO1v-k"/>
 <!-- Desktop Hover Overlay -->
@@ -259,8 +528,8 @@
 </div>
 </div>
 
-<!-- Project Card 3: Cloud Architect -->
-<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<!-- Project Card 5: Cloud Architect -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col project-card" data-category="cloud">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
 <img alt="Cloud Infrastructure Visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An abstract, futuristic visualization of cloud infrastructure and network nodes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5dX59UuVsNYx_FlX1n4w7q7XNqMyrIGgV7ubByue4MwcgBPNeNSan_HiYkrXXm7Os6ETwtXNyN_4b2wne8gUdoCeLACOhS64UNtzyR857cT_QE6VmIEsU--VS9s4pKrz2Iac7XHXM6EekkyrwFf447UjZjNVbKfX_FPuqj2aFzJQucHLStgNZW7bhv62sKBbrygcke7YHwwtWI9d7AcMIwLogPhMFFZ8FczW7aFJjaZB9Oh7Ptiaau19Wklj4cO9oA7VGwkSAf_M"/>
 <!-- Desktop Hover Overlay -->
@@ -288,8 +557,8 @@
 </div>
 </div>
 
-<!-- Project Card 4: Crypto Wallet -->
-<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col">
+<!-- Project Card 6: Crypto Wallet -->
+<div class="group relative overflow-hidden rounded-2xl glass-card border border-outline-variant/30 flex flex-col project-card" data-category="fintech">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container relative">
 <img alt="Crypto Wallet Interface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist mobile crypto wallet interface showing asset balances." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7L8oSDYuzwSFzmFOVN200AcxyijItNKg-CZ9-9NtjYzCqeW_9mSDRt5N7liMtNM1b0ZDnr-j9r_2NvgEuov48OfhH6dNtKi0H95hxhK7k3MOxpBqpj6uy02dvoynoNysSWu054hMJBXyrS-Ts64PkHncgoOlip74zDlEEkK-5xJO9WGvje9yQWNw17xlf3r-7laCI2qNr62m2stPMiK2LSjLk9IyfctmHUXvJAGFwLAg65k6tU4CuodSLZF7AEwpcYnQ9cLIzbXc"/>
 <!-- Desktop Hover Overlay -->
@@ -384,7 +653,81 @@
 </div>
 </footer>
 
+<!-- Fullscreen Image Preview Lightbox Modal -->
+<div id="imageLightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+  <button type="button" onclick="closeImageModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+    <span class="material-symbols-outlined text-2xl">close</span>
+  </button>
+  <div class="max-w-5xl max-h-[90vh] flex flex-col items-center">
+    <img id="lightboxImg" src="" alt="Enlarged Showcase View" class="max-w-full max-h-[80vh] object-contain rounded-xl shadow-2xl"/>
+    <p id="lightboxCaption" class="text-white/80 font-medium text-sm mt-3 text-center"></p>
+  </div>
+</div>
+
 <script>
+  // Image switcher for Zantry POS Showcase
+  function switchPosImage(src, caption, btn) {
+    const mainImg = document.getElementById('posMainImg');
+    const cap = document.getElementById('posImageCaption');
+    if (mainImg) {
+      mainImg.style.opacity = '0.3';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.style.opacity = '1';
+      }, 150);
+    }
+    if (cap) cap.textContent = caption;
+
+    document.querySelectorAll('.pos-thumb').forEach(t => {
+      t.classList.remove('active-thumb', 'border-primary', 'ring-2', 'ring-primary/30');
+      t.classList.add('border-outline-variant/40');
+      const label = t.querySelector('span');
+      if (label) {
+        label.classList.remove('text-primary');
+        label.classList.add('text-on-surface-variant');
+      }
+    });
+
+    if (btn) {
+      btn.classList.add('active-thumb', 'border-primary', 'ring-2', 'ring-primary/30');
+      btn.classList.remove('border-outline-variant/40');
+      const label = btn.querySelector('span');
+      if (label) {
+        label.classList.add('text-primary');
+        label.classList.remove('text-on-surface-variant');
+      }
+    }
+  }
+
+  // Lightbox Modal
+  function openImageModal(src, caption) {
+    const modal = document.getElementById('imageLightboxModal');
+    const img = document.getElementById('lightboxImg');
+    const cap = document.getElementById('lightboxCaption');
+    if (modal && img) {
+      img.src = src;
+      if (cap) cap.textContent = caption || '';
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeImageModal() {
+    const modal = document.getElementById('imageLightboxModal');
+    if (modal) {
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 250);
+    }
+  }
+
+  document.getElementById('imageLightboxModal')?.addEventListener('click', function(e) {
+    if (e.target === this) closeImageModal();
+  });
+
   (function() {
     // Mobile Navigation Toggle
     const btn = document.getElementById('mobileMenuBtn');
@@ -412,14 +755,29 @@
       });
     }
 
-    // Filter Buttons
+    // Filter Buttons logic
     const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         btn.classList.add('scale-95');
         setTimeout(() => btn.classList.remove('scale-95'), 100);
+
+        const filter = btn.getAttribute('data-filter') || 'all';
+
+        projectCards.forEach(card => {
+          const category = card.getAttribute('data-category') || '';
+          if (filter === 'all' || category.includes(filter)) {
+            card.style.display = '';
+            card.classList.remove('hidden');
+          } else {
+            card.style.display = 'none';
+            card.classList.add('hidden');
+          }
+        });
       });
     });
   })();

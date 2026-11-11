@@ -141,6 +141,23 @@ export default function CaseStudyModal({ project, onClose }) {
             </div>
           </div>
 
+          {/* Media & Screenshots Gallery (if available) */}
+          {project.gallery && project.gallery.length > 0 && (
+            <div>
+              <h3 className="text-base sm:text-lg font-bold text-primary mb-3 flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary text-lg sm:text-xl">collections</span>
+                System Screenshots &amp; Hardware Previews
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {project.gallery.map((imgSrc, idx) => (
+                  <div key={idx} className="rounded-xl overflow-hidden border border-outline-variant/30 bg-slate-900 aspect-[4/3] group relative">
+                    <img src={imgSrc} alt={`${project.title} screenshot ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Technologies Used */}
           <div>
             <h3 className="text-base sm:text-lg font-bold text-primary mb-3 flex items-center gap-2">
