@@ -30,57 +30,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden py-10 sm:py-16 lg:py-24">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="z-10 text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs mb-5">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
-              <span>Pioneering Enterprise Tech Architecture</span>
-            </div>
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-5 leading-[1.15] tracking-tight">
-              Building Smart Software for{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
-                Modern Businesses
-              </span>
-            </h1>
-            
-            <p className="text-sm sm:text-base md:text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
-              Empowering enterprises with scalable cloud architecture, sub-second data pipelines, intuitive user experiences, and rigorous engineering precision.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-              <Link
-                to="/contact"
-                className="w-full sm:w-auto text-center bg-primary text-on-primary px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:shadow-xl transition-all active:scale-95 shadow-md shadow-primary/20"
-              >
-                Schedule Consultation
-              </Link>
-              <Link
-                to="/portfolio"
-                className="w-full sm:w-auto text-center bg-surface/80 backdrop-blur-sm border border-outline-variant/40 px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:bg-surface transition-all active:scale-95 text-primary"
-              >
-                Explore Case Studies
-              </Link>
-            </div>
-
-            {/* Quick trust metrics */}
-            <div className="mt-8 pt-6 sm:pt-8 border-t border-outline-variant/20 grid grid-cols-3 gap-2 sm:gap-6 max-w-md">
-              <div>
-                <div className="text-lg sm:text-2xl font-extrabold text-primary">99.99%</div>
-                <div className="text-[10px] sm:text-xs text-on-surface-variant font-medium">Production SLA</div>
-              </div>
-              <div className="border-l border-outline-variant/30 pl-2 sm:pl-6">
-                <div className="text-lg sm:text-2xl font-extrabold text-primary">$250M+</div>
-                <div className="text-[10px] sm:text-xs text-on-surface-variant font-medium">Client Value</div>
-              </div>
-              <div className="border-l border-outline-variant/30 pl-2 sm:pl-6">
-                <div className="text-lg sm:text-2xl font-extrabold text-primary">40+</div>
-                <div className="text-[10px] sm:text-xs text-on-surface-variant font-medium">Deployed</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Hero POS Ad Mockup Card */}
-          <div className="relative mt-4 lg:mt-0">
+          
+          {/* Hero POS Ad Mockup Card - Image 1st */}
+          <div className="relative order-1 lg:order-1">
             <Link to="/portfolio" className="block group">
               <div className="glass-card p-3 sm:p-5 rounded-2xl sm:rounded-3xl relative z-10 border border-primary/20 shadow-xl sm:shadow-2xl hover:shadow-primary/20 transition-all duration-300 bg-gradient-to-b from-white to-surface">
                 {/* Window Header */}
@@ -91,8 +43,7 @@ export default function Home() {
                     <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
                     <span className="text-[10px] sm:text-xs font-bold text-primary ml-1">Zantry POS Pro</span>
                   </div>
-                  <span className="px-2 py-0.5 rounded-full text-[9px] sm:text-[11px] font-bold bg-primary text-white shadow-sm flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span className="px-2.5 py-0.5 rounded-full text-[9px] sm:text-[11px] font-bold bg-primary text-white shadow-sm">
                     Featured POS Ad
                   </span>
                 </div>
@@ -118,31 +69,39 @@ export default function Home() {
             </Link>
           </div>
 
-            {/* Decorative background blurs */}
-            <div className="absolute -top-6 -right-6 w-48 sm:w-72 h-48 sm:h-72 bg-secondary-fixed/40 rounded-full blur-2xl sm:blur-3xl -z-10 pointer-events-none"></div>
+          {/* Text & Buttons Next */}
+          <div className="z-10 text-left order-2 lg:order-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs mb-5">
+              <span>Pioneering Digital Solutions &amp; POS Systems</span>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-5 leading-[1.15] tracking-tight">
+              Building Smart Software for{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
+                Modern Businesses
+              </span>
+            </h1>
+            
+            <p className="text-sm sm:text-base md:text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
+              Empowering enterprises with scalable cloud architecture, sub-second data pipelines, intuitive user experiences, and rigorous engineering precision.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+              <Link
+                to="/portfolio"
+                className="w-full sm:w-auto text-center bg-primary text-on-primary px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:shadow-xl transition-all active:scale-95 shadow-md shadow-primary/20 flex items-center justify-center gap-2"
+              >
+                <span className="material-symbols-outlined text-base">point_of_sale</span> Explore Zantry POS
+              </Link>
+              <Link
+                to="/contact"
+                className="w-full sm:w-auto text-center bg-surface/80 backdrop-blur-sm border border-outline-variant/40 px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:bg-surface transition-all active:scale-95 text-primary"
+              >
+                Schedule Consultation
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="bg-surface py-10 sm:py-16 border-y border-outline-variant/10">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center">
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-primary">100+</div>
-            <div className="text-[10px] sm:text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Projects Delivered</div>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-primary">50+</div>
-            <div className="text-[10px] sm:text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Enterprise Clients</div>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-primary">99.99%</div>
-            <div className="text-[10px] sm:text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Uptime Guarantee</div>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-primary">24/7</div>
-            <div className="text-[10px] sm:text-xs font-semibold text-on-surface-variant uppercase tracking-wider">SRE &amp; Support</div>
-          </div>
         </div>
       </section>
 
