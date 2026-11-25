@@ -30,7 +30,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-gradient relative overflow-hidden py-10 sm:py-16 lg:py-24">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          
+
           {/* Hero POS Ad Mockup Card - Image 1st */}
           <div className="relative order-1 lg:order-1">
             <Link to="/portfolio" className="block group">
@@ -74,18 +74,18 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs mb-5">
               <span>Pioneering Digital Solutions &amp; POS Systems</span>
             </div>
-            
+
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-5 leading-[1.15] tracking-tight">
               Building Smart Software for{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
                 Modern Businesses
               </span>
             </h1>
-            
+
             <p className="text-sm sm:text-base md:text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
               Empowering enterprises with scalable cloud architecture, sub-second data pipelines, intuitive user experiences, and rigorous engineering precision.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
               <Link
                 to="/portfolio"
@@ -102,6 +102,79 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* 3 Biggest Daily Headaches Solved Section */}
+      <section className="py-12 sm:py-16 bg-surface border-b border-outline-variant/20">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+            <span className="inline-block bg-primary/10 text-primary px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+              Operational Solutions
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mb-3">
+              3 Daily Store Headaches Zantry POS Solves
+            </h2>
+            <p className="text-xs sm:text-sm text-on-surface-variant">
+              Say goodbye to unexplained stock loss, end-of-day drawer mismatches, and slow handwritten voucher queues.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Problem 1 */}
+            <div className="glass-card rounded-2xl p-6 sm:p-8 border border-outline-variant/30 hover:border-amber-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-2xl">inventory_2</span>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600 block mb-1">Inventory Protection</span>
+                <h3 className="text-lg font-bold text-primary mb-2">Stopping Stock Leakage</h3>
+                <p className="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Every transaction automatically deducts inventory. Real-time audit logs eliminate unexplained shrinkage, theft, and expired goods.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-xs font-semibold text-primary">
+                <span className="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+                <span>Live deduction &amp; audit trails</span>
+              </div>
+            </div>
+
+            {/* Problem 2 */}
+            <div className="glass-card rounded-2xl p-6 sm:p-8 border border-outline-variant/30 hover:border-emerald-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-2xl">account_balance_wallet</span>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 block mb-1">Cash Reconciliation</span>
+                <h3 className="text-lg font-bold text-primary mb-2">Fixing Daily Cash Count Errors</h3>
+                <p className="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Eliminate drawer mismatches. Automated shift cash-in and cash-out logs ensure physical cash always matches digital reports.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-xs font-semibold text-primary">
+                <span className="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+                <span>Shift opening/closing balance accuracy</span>
+              </div>
+            </div>
+
+            {/* Problem 3 */}
+            <div className="glass-card rounded-2xl p-6 sm:p-8 border border-outline-variant/30 hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-2xl">receipt_long</span>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Fast Checkout</span>
+                <h3 className="text-lg font-bold text-primary mb-2">Replacing Slow Handwritten Vouchers</h3>
+                <p className="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Replace slow paper pads with sub-second digital receipts. Connect Bluetooth or USB thermal printers for branded customer receipts in seconds.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-xs font-semibold text-primary">
+                <span className="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+                <span>Instant thermal &amp; digital vouchers</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -319,11 +392,10 @@ export default function Home() {
                   <button
                     key={cat}
                     onClick={() => setHomeFilter(cat)}
-                    className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                      homeFilter === cat
+                    className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${homeFilter === cat
                         ? 'bg-primary text-on-primary shadow-sm'
                         : 'text-on-surface-variant hover:text-primary hover:bg-surface-container-highest'
-                    }`}
+                      }`}
                   >
                     {cat}
                   </button>
@@ -454,233 +526,142 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-12 sm:py-20 bg-surface overflow-hidden">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-          <div className="text-center mb-10 sm:mb-16 max-w-xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">
-              Client Feedback
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mb-2">
-              Trusted by Tech Leaders
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Testimonial 1 */}
-            <div className="glass-card p-6 sm:p-8 rounded-2xl border border-outline-variant/20 flex flex-col justify-between">
-              <div>
-                <div className="flex gap-1 text-yellow-500 mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="material-symbols-outlined text-base sm:text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  ))}
-                </div>
-                <p className="text-xs sm:text-sm text-on-surface mb-6 italic leading-relaxed">
-                  "Zantry Tech modernized our financial analytics engine from a 2-second bottleneck to 18ms real-time streams. Their engineering depth is world-class."
-                </p>
-              </div>
-              <div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
-                <img
-                  alt="Mark Henderson"
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shrink-0"
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
-                />
-                <div>
-                  <div className="font-bold text-xs sm:text-sm text-primary">Mark Henderson</div>
-                  <div className="text-[11px] text-on-surface-variant">CTO, Apex Capital Partners</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="glass-card p-6 sm:p-8 rounded-2xl border border-outline-variant/20 flex flex-col justify-between">
-              <div>
-                <div className="flex gap-1 text-yellow-500 mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="material-symbols-outlined text-base sm:text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  ))}
-                </div>
-                <p className="text-xs sm:text-sm text-on-surface mb-6 italic leading-relaxed">
-                  "The mobile platform they engineered sustained massive launch traffic without a hitch. The user experience and biometric security are simply sublime."
-                </p>
-              </div>
-              <div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
-                <img
-                  alt="Sarah Jenkins"
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shrink-0"
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80"
-                />
-                <div>
-                  <div className="font-bold text-xs sm:text-sm text-primary">Sarah Jenkins</div>
-                  <div className="text-[11px] text-on-surface-variant">Product Head, Velox Systems</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="glass-card p-6 sm:p-8 rounded-2xl border border-outline-variant/20 flex flex-col justify-between">
-              <div>
-                <div className="flex gap-1 text-yellow-500 mb-3 sm:mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="material-symbols-outlined text-base sm:text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  ))}
-                </div>
-                <p className="text-xs sm:text-sm text-on-surface mb-6 italic leading-relaxed">
-                  "Professional, transparent, and ruthlessly efficient. Zantry Tech is our primary technology partner for every high-stakes infrastructure release."
-                </p>
-              </div>
-              <div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
-                <img
-                  alt="David Chen"
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shrink-0"
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
-                />
-                <div>
-                  <div className="font-bold text-xs sm:text-sm text-primary">David Chen</div>
-                  <div className="text-[11px] text-on-surface-variant">CEO, InnovateX Digital</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section className="py-12 sm:py-20 bg-surface-container-low" id="contact">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-          <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 border border-outline-variant/30 shadow-xl">
-            <div className="p-6 sm:p-10 md:p-16 bg-primary text-on-primary flex flex-col justify-between">
-              <div>
-                <span className="inline-block px-3 py-1 rounded-full bg-on-primary/10 text-on-primary text-xs font-bold uppercase tracking-widest mb-4">
-                  Get In Touch
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 sm:mb-6">
-                  Ready to Build Something Extraordinary?
-                </h2>
-                <p className="text-xs sm:text-sm md:text-base mb-8 text-on-primary/80 leading-relaxed">
-                  Schedule an architectural discovery session with our senior engineers. We’ll analyze your technical challenges and provide an actionable roadmap.
-                </p>
-
-                <div className="space-y-4 sm:space-y-6">
-                  <div className="flex items-center gap-3.5">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
-                      <span className="material-symbols-outlined text-on-primary text-lg">mail</span>
-                    </div>
+        <section className="py-12 sm:py-20 bg-slate-50" id="contact">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
+                <div className="rounded-2xl border border-slate-200 overflow-hidden grid grid-cols-1 lg:grid-cols-2 bg-white shadow-sm">
+                  <div className="p-6 sm:p-10 md:p-14 bg-primary text-on-primary flex flex-col justify-between">
                     <div>
-                      <div className="text-[10px] sm:text-xs text-on-primary/60">Email Inquiry</div>
-                      <a href="mailto:zantrytech@gmail.com" className="font-bold text-xs sm:text-sm hover:underline">zantrytech@gmail.com</a>
-                    </div>
-                  </div>
+                        <span className="inline-block px-3 py-1 rounded-md bg-white/10 text-white text-xs font-medium mb-4">
+                          Direct Contact
+                        </span>
+                          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                            Get in Touch with Zantry Tech
+                          </h2>
+                            <p className="text-xs sm:text-sm md:text-base mb-8 text-slate-200 leading-relaxed">
+                              Whether you need a turnkey POS setup for your retail store or custom software engineering, our team is ready to help.
+                            </p>
 
-                  <div className="flex items-center gap-3.5">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
-                      <span className="material-symbols-outlined text-on-primary text-lg">call</span>
-                    </div>
-                    <div>
-                      <div className="text-[10px] sm:text-xs text-on-primary/60">Direct Office</div>
-                      <div className="flex flex-wrap gap-x-2">
-                        <a href="tel:+959965157402" className="font-bold text-xs sm:text-sm hover:underline">+959965157402</a>,
-                        <a href="tel:+959790383481" className="font-bold text-xs sm:text-sm hover:underline">+959790383481</a>
-                      </div>
-                    </div>
-                  </div>
+                            <div className="space-y-4 sm:space-y-6">
+                              <div className="flex items-center gap-3.5">
+                                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+                                    <span className="material-symbols-outlined text-white text-lg">mail</span>
+                                  </div>
+                                  <div>
+                                    <div className="text-[10px] sm:text-xs text-slate-300">Email Inquiry</div>
+                                    <a href="mailto:zantrytech@gmail.com" className="font-bold text-xs sm:text-sm hover:underline">zantrytech@gmail.com</a>
+                                  </div>
+                                </div>
 
-                  <div className="flex items-center gap-3.5">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
-                      <span className="material-symbols-outlined text-on-primary text-lg">location_on</span>
-                    </div>
-                    <div>
-                      <div className="text-[10px] sm:text-xs text-on-primary/60">Global HQ</div>
-                      <div className="font-bold text-xs sm:text-sm">1200 Innovation Drive, Austin, TX 78701</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                                <div className="flex items-center gap-3.5">
+                                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+                                      <span className="material-symbols-outlined text-white text-lg">call</span>
+                                    </div>
+                                    <div>
+                                      <div className="text-[10px] sm:text-xs text-slate-300">Hotlines</div>
+                                      <div className="flex flex-wrap gap-x-2">
+                                        <a href="tel:09660227671" className="font-bold text-xs sm:text-sm hover:underline">09660227671</a>,
+                                        <a href="tel:09790383481" className="font-bold text-xs sm:text-sm hover:underline">09790383481</a>
+                                      </div>
+                                    </div>
+                                  </div>
 
-              <div className="pt-6 mt-6 sm:pt-8 sm:mt-8 border-t border-on-primary/10 text-[11px] text-on-primary/60">
-                Guaranteed NDA on request • Direct response within 4 hours
-              </div>
-            </div>
+                                  <div className="flex items-center gap-3.5">
+                                      <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+                                        <span className="material-symbols-outlined text-white text-lg">location_on</span>
+                                      </div>
+                                      <div>
+                                        <div className="text-[10px] sm:text-xs text-slate-300">Headquarters</div>
+                                        <div className="font-bold text-xs sm:text-sm">Yangon, Myanmar (Nationwide Support)</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
 
-            <div className="p-6 sm:p-10 md:p-16 bg-surface">
-              {contactSubmitted ? (
-                <div className="p-6 sm:p-8 rounded-2xl bg-green-50 border border-green-200 text-center space-y-3 my-auto">
-                  <span className="material-symbols-outlined text-4xl sm:text-5xl text-green-600">check_circle</span>
-                  <h3 className="text-xl sm:text-2xl font-bold text-green-900">Message Received!</h3>
-                  <p className="text-xs sm:text-sm text-green-700 leading-relaxed">
-                    Thank you for contacting Zantry Tech. One of our senior solutions architects will reach out to you within 4 business hours.
-                  </p>
-                </div>
-              ) : (
-                <form className="space-y-4 sm:space-y-5" onSubmit={handleContactSubmit}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-1.5">
-                      <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Full Name *</label>
-                      <input
-                        name="name"
-                        required
-                        className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
-                        placeholder="Sarah Jenkins"
-                        type="text"
-                      />
-                    </div>
-                    <div className="space-y-1.5">
-                      <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Work Email *</label>
-                      <input
-                        name="email"
-                        required
-                        className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
-                        placeholder="sarah@company.com"
-                        type="email"
-                      />
-                    </div>
-                  </div>
+                                  <div className="pt-6 mt-6 sm:pt-8 sm:mt-8 border-t border-white/10 text-xs text-slate-300">
+                                    Direct response within 4 business hours • 7 days a week support
+                                  </div>
+                                </div>
 
-                  <div className="space-y-1.5">
-                    <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Project Type</label>
-                    <select
-                      name="subject"
-                      className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
-                    >
-                      <option>Enterprise Web / SaaS Platform</option>
-                      <option>Cloud Infrastructure &amp; DevOps</option>
-                      <option>AI / Machine Learning Integration</option>
-                      <option>Fintech / High-Security Mobile App</option>
-                      <option>Architecture Review / Code Audit</option>
-                    </select>
-                  </div>
+                                <div className="p-6 sm:p-10 md:p-16 bg-surface">
+                                  {contactSubmitted ? (
+                                    <div className="p-6 sm:p-8 rounded-2xl bg-green-50 border border-green-200 text-center space-y-3 my-auto">
+                                      <span className="material-symbols-outlined text-4xl sm:text-5xl text-green-600">check_circle</span>
+                                      <h3 className="text-xl sm:text-2xl font-bold text-green-900">Message Received!</h3>
+                                      <p className="text-xs sm:text-sm text-green-700 leading-relaxed">
+                                        Thank you for contacting Zantry Tech. One of our senior solutions architects will reach out to you within 4 business hours.
+                                      </p>
+                                    </div>
+                                  ) : (
+                                    <form className="space-y-4 sm:space-y-5" onSubmit={handleContactSubmit}>
+                                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div className="space-y-1.5">
+                                          <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Full Name *</label>
+                                          <input
+                                            name="name"
+                                            required
+                                            className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
+                                            placeholder="Sarah Jenkins"
+                                            type="text"
+                                          />
+                                        </div>
+                                        <div className="space-y-1.5">
+                                          <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Work Email *</label>
+                                          <input
+                                            name="email"
+                                            required
+                                            className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
+                                            placeholder="sarah@company.com"
+                                            type="email"
+                                          />
+                                        </div>
+                                      </div>
 
-                  <div className="space-y-1.5">
-                    <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Project Brief *</label>
-                    <textarea
-                      name="message"
-                      required
-                      className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none resize-none text-xs sm:text-sm bg-surface-container-lowest"
-                      placeholder="Tell us about your requirements, timeline, and current tech stack..."
-                      rows={4}
-                    ></textarea>
-                  </div>
+                                      <div className="space-y-1.5">
+                                        <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Project Type</label>
+                                        <select
+                                          name="subject"
+                                          className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-xs sm:text-sm bg-surface-container-lowest"
+                                        >
+                                          <option>Enterprise Web / SaaS Platform</option>
+                                          <option>Cloud Infrastructure &amp; DevOps</option>
+                                          <option>AI / Machine Learning Integration</option>
+                                          <option>Fintech / High-Security Mobile App</option>
+                                          <option>Architecture Review / Code Audit</option>
+                                        </select>
+                                      </div>
 
-                  <button
-                    type="submit"
-                    className="w-full bg-primary text-on-primary py-3.5 sm:py-4 rounded-xl font-bold text-xs sm:text-sm hover:shadow-xl transition-all active:scale-98 shadow-md shadow-primary/20"
-                  >
-                    Send Architecture Inquiry
-                  </button>
-                </form>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+                                      <div className="space-y-1.5">
+                                        <label className="text-[11px] font-bold uppercase tracking-wider text-primary">Project Brief *</label>
+                                        <textarea
+                                          name="message"
+                                          required
+                                          className="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none resize-none text-xs sm:text-sm bg-surface-container-lowest"
+                                          placeholder="Tell us about your requirements, timeline, and current tech stack..."
+                                          rows={4}
+                                        ></textarea>
+                                      </div>
 
-      {/* Case Study Detail Modal if triggered */}
-      {selectedProject && (
-        <CaseStudyModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
-    </>
-  );
+                                      <button
+                                        type="submit"
+                                        className="w-full bg-primary text-on-primary py-3.5 sm:py-4 rounded-xl font-bold text-xs sm:text-sm hover:shadow-xl transition-all active:scale-98 shadow-md shadow-primary/20"
+                                      >
+                                        Send Architecture Inquiry
+                                      </button>
+                                    </form>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+
+                          {/* Case Study Detail Modal if triggered */}
+                          {selectedProject && (
+                            <CaseStudyModal
+                              project={selectedProject}
+                              onClose={() => setSelectedProject(null)}
+                            />
+                          )}
+                        </>
+                        );
 }

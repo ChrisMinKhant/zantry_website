@@ -153,10 +153,10 @@
 <li><a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300 font-label-md text-label-md" href="/contact/">Contact</a></li>
 </ul>
 <div class="flex items-center gap-2 sm:gap-4">
-<a href="#contactForm" class="hidden sm:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+<a href="#contactForm" class="hidden sm:inline-block bg-primary text-on-primary px-4 py-2 rounded-xl font-label-md text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm">
     Book Consultation
 </a>
-<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-full transition-colors cursor-pointer">
+<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-xl transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
 </button>
 </div>
@@ -166,103 +166,92 @@
 <!-- Mobile Navigation Drawer -->
 <div id="mobileMenu" class="fixed inset-0 bg-surface/98 backdrop-blur-2xl z-40 transition-all duration-300 flex flex-col md:hidden opacity-0 invisible pointer-events-none px-6 pt-24 pb-8 overflow-y-auto">
   <ul class="flex flex-col items-center gap-2.5 w-full max-w-xs mx-auto">
-    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Home</a></li>
-    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Services</a></li>
-    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Portfolio</a></li>
-    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Process</a></li>
-    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-2xl text-base font-bold text-primary bg-primary/10 transition-all">Contact</a></li>
+    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Home</a></li>
+    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Services</a></li>
+    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Portfolio</a></li>
+    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Process</a></li>
+    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-xl text-base font-medium text-primary bg-primary/10 transition-colors">Contact</a></li>
   </ul>
   <div class="mt-6 w-full max-w-xs mx-auto text-center">
-    <a href="#contactForm" class="block w-full bg-primary text-white py-3.5 px-6 rounded-full text-sm font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+    <a href="#contactForm" class="block w-full bg-primary text-white py-3.5 px-6 rounded-xl text-sm font-medium shadow-sm hover:bg-primary/90 transition-colors">
       Book Consultation
     </a>
   </div>
 </div>
 
-<main class="pt-20 sm:pt-24 pb-16 sm:pb-24 tech-pattern min-h-screen">
+<main class="pt-20 sm:pt-24 pb-16 sm:pb-24 min-h-screen bg-slate-50">
 <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter">
 <div class="mb-8 sm:mb-12 text-center md:text-left">
-<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm uppercase tracking-widest text-xs sm:text-label-sm mb-4 sm:mb-6">Get In Touch</span>
-<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-bold text-primary mb-4 sm:mb-6 leading-tight tracking-tight">Ready to Build Something Extraordinary?</h1>
-<p class="text-on-surface-variant font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg max-w-2xl mx-auto md:mx-0">Connect with our engineering experts to transform your ambitious ideas into precision-crafted digital reality.</p>
+<span class="inline-block bg-slate-200/70 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">Direct Contact</span>
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4 leading-tight tracking-tight">Contact Zantry Tech</h1>
+<p class="text-on-surface-variant font-body-md text-sm sm:text-base max-w-2xl mx-auto md:mx-0 leading-relaxed">Connect with our engineering team for Zantry POS demos, custom software development, or technical support across Myanmar.</p>
 </div>
 
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter items-start">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 <!-- Left Side: Contact Information -->
-<div class="lg:col-span-5 space-y-6 sm:space-y-8">
-<div class="glass-card p-6 sm:p-8 rounded-2xl">
+<div class="lg:col-span-5 space-y-6">
+<div class="p-6 sm:p-8 rounded-2xl border border-slate-200 bg-white shadow-sm">
 <div class="space-y-6">
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined text-2xl">mail</span>
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">mail</span>
 </div>
 <div class="min-w-0 flex-1">
-<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Email Us</p>
-<a class="text-base sm:text-headline-md font-bold text-primary hover:underline break-all" href="mailto:zantrytech@gmail.com">zantrytech@gmail.com</a>
-<p class="text-on-surface-variant text-xs sm:text-sm mt-1">Our team typically responds within 4 business hours.</p>
+<p class="text-xs font-semibold text-slate-500 mb-0.5">Email</p>
+<a class="text-base font-bold text-primary hover:underline break-all" href="mailto:zantrytech@gmail.com">zantrytech@gmail.com</a>
+<p class="text-on-surface-variant text-xs mt-1">Our team typically responds within 4 business hours.</p>
 </div>
 </div>
 
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined text-2xl">call</span>
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">call</span>
 </div>
 <div class="min-w-0 flex-1">
-<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Call Support &amp; POS Hotline</p>
+<p class="text-xs font-semibold text-slate-500 mb-0.5">Hotlines &amp; POS support</p>
 <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:09660227671">09660227671</a>
-<span class="text-secondary hidden sm:inline">•</span>
-<a class="text-base sm:text-headline-md font-bold text-primary hover:underline" href="tel:09790383481">09790383481</a>
+<a class="text-base font-bold text-primary hover:underline" href="tel:09660227671">09660227671</a>
+<span class="text-slate-400 hidden sm:inline">•</span>
+<a class="text-base font-bold text-primary hover:underline" href="tel:09790383481">09790383481</a>
 </div>
-<p class="text-on-surface-variant text-xs sm:text-sm mt-1">Available Daily for POS Inquiries &amp; Technical Support</p>
+<p class="text-on-surface-variant text-xs mt-1">Available daily for POS inquiries &amp; live assistance.</p>
 </div>
 </div>
 
 <div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-<span class="material-symbols-outlined text-2xl">location_on</span>
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">location_on</span>
 </div>
 <div class="min-w-0 flex-1">
-<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-1">Our HQ</p>
-<p class="text-base sm:text-headline-md font-bold text-primary">1200 Innovation Drive</p>
-<p class="text-on-surface-variant text-xs sm:text-sm">Suite 400, Austin, TX 78701</p>
+<p class="text-xs font-semibold text-slate-500 mb-0.5">Location &amp; coverage</p>
+<p class="text-base font-bold text-primary">Yangon, Myanmar</p>
+<p class="text-on-surface-variant text-xs mt-1">On-site setup in Yangon &amp; Mandalay, plus remote deployment nationwide.</p>
 </div>
-</div>
-</div>
-
-<div class="mt-8 pt-6 border-t border-outline-variant/40">
-<p class="font-label-md text-xs uppercase tracking-wider text-secondary mb-3">Follow our progress</p>
-<div class="flex gap-3">
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Hub">
-<span class="material-symbols-outlined text-[20px]">hub</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Terminal">
-<span class="material-symbols-outlined text-[20px]">terminal</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#" aria-label="Share">
-<span class="material-symbols-outlined text-[20px]">share</span>
-</a>
 </div>
 </div>
 </div>
 
-<!-- Subtle Map Placeholder -->
-<div class="h-48 sm:h-64 rounded-2xl overflow-hidden glass-card relative group">
-<img alt="Location Map" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A minimalist digital map of Austin, Texas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDkfbi5atqjwFG14l6vgqeY4kPe_qZWo9SWFAF4p6DWY-FUm7HJRhCWSt8U9b-AQWwaQX2hYlvgjDfPXSOsBxb2UJNSMOX8tSmml0C_Ux-Nv8KUJA-rI1x99W6S-pNtRn_WvDUm0-jSTlzLS6jMpjGUKe0BYd4H4eATkcLFJNkcR8uWwE4_C48UTpTjOKFF_trWyy9hUVSWzp247fgzUnBuwA3TAmRu0CJToZa3SydOAb6cZTr6CZjgqonjWobsNoXSwTK9_zNk0A"/>
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold shadow-lg flex items-center gap-2">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
-    Visit our Studio
-</div>
-</div>
+<!-- Support coverage card -->
+<div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm">
+  <div class="flex items-center gap-3 mb-2">
+    <span class="material-symbols-outlined text-emerald-600 text-xl">verified</span>
+    <h4 class="text-sm font-bold text-primary">Nationwide Deployment</h4>
+  </div>
+  <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
+    We deploy and support POS systems and custom software across all major townships in Myanmar. Hardware testing and receipt printer pairing are completed prior to delivery.
+  </p>
+  <div class="flex items-center gap-2 text-xs font-medium text-slate-700">
+    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+    <span>Live support available 7 days a week</span>
+  </div>
 </div>
 </div>
 
 <!-- Right Side: Contact Form -->
 <div class="lg:col-span-7">
-<div class="glass-card p-6 sm:p-8 md:p-10 rounded-2xl">
+<div class="p-6 sm:p-8 md:p-10 rounded-2xl border border-slate-200 bg-white shadow-sm">
 <h3 class="text-xl sm:text-2xl font-bold text-primary mb-2">Send us a Message</h3>
-<p class="text-sm text-on-surface-variant mb-6">Fill in the details below and we will get back to you promptly.</p>
+<p class="text-sm text-on-surface-variant mb-6">Fill in your requirements below and we will get back to you promptly.</p>
 <form id="contactForm" class="space-y-4 sm:space-y-5" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
 <div class="space-y-1.5">

@@ -111,14 +111,19 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(15, 23, 42, 0.05);
-            box-shadow: 0px 4px 24px rgba(15, 23, 42, 0.04);
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
         }
-        .hero-gradient {
-            background: radial-gradient(circle at 70% 30%, rgba(211, 228, 254, 0.5) 0%, rgba(247, 249, 251, 1) 100%);
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+        }
+        .hero-surface {
+            background-color: #f8fafc;
+            border-bottom: 1px solid rgba(15, 23, 42, 0.06);
         }
         h1:not([class*="text-white"]):not([class*="text-on-primary"]),
         h2:not([class*="text-white"]):not([class*="text-on-primary"]),
@@ -148,10 +153,10 @@
 <li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/contact/">Contact</a></li>
 </ul>
 <div class="flex items-center gap-2 sm:gap-4">
-<a href="/contact/" class="hidden sm:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+<a href="/contact/" class="hidden sm:inline-block bg-primary text-on-primary px-4 py-2 rounded-xl font-label-md text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm">
                     Book Consultation
                 </a>
-<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-full transition-colors cursor-pointer">
+<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-xl transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
 </button>
 </div>
@@ -161,14 +166,14 @@
 <!-- Mobile Navigation Drawer -->
 <div id="mobileMenu" class="fixed inset-0 bg-surface/98 backdrop-blur-2xl z-40 transition-all duration-300 flex flex-col md:hidden opacity-0 invisible pointer-events-none px-6 pt-24 pb-8 overflow-y-auto">
   <ul class="flex flex-col items-center gap-2.5 w-full max-w-xs mx-auto">
-    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-2xl text-base font-bold text-primary bg-primary/10 transition-all">Home</a></li>
-    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Services</a></li>
-    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Portfolio</a></li>
-    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Process</a></li>
-    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Contact</a></li>
+    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-xl text-base font-medium text-primary bg-primary/10 transition-colors">Home</a></li>
+    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Services</a></li>
+    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Portfolio</a></li>
+    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Process</a></li>
+    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Contact</a></li>
   </ul>
   <div class="mt-6 w-full max-w-xs mx-auto text-center">
-    <a href="/contact/" class="block w-full bg-primary text-white py-3.5 px-6 rounded-full text-sm font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+    <a href="/contact/" class="block w-full bg-primary text-white py-3.5 px-6 rounded-xl text-sm font-medium shadow-sm hover:bg-primary/90 transition-colors">
       Book Consultation
     </a>
   </div>
@@ -176,58 +181,55 @@
 
 <main class="pt-16 sm:pt-20">
 <!-- Hero Section -->
-<section class="hero-gradient relative overflow-hidden py-12 sm:py-20 lg:py-28">
-<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-gutter items-center">
+<section class="hero-surface relative overflow-hidden py-12 sm:py-18 lg:py-24">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
 <!-- Image 1st (Left on Web View) -->
 <div class="relative order-1 lg:order-1">
 <a href="/portfolio/#zantry-pos" class="block group" title="Click to view Zantry POS Advertisement & Details">
-  <div class="glass-card p-2.5 sm:p-4 rounded-2xl sm:rounded-3xl relative z-10 animate-float shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/20 bg-gradient-to-b from-white to-surface">
-    <div class="relative rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 aspect-[4/3]">
-      <img alt="Zantry POS Commercial Advertisement" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" src="/images/zantry-pos-ad-clean.jpg"/>
+  <div class="bg-white p-3 sm:p-3.5 rounded-2xl shadow-sm border border-slate-200/80 transition-colors">
+    <div class="relative rounded-xl overflow-hidden bg-slate-900 aspect-[4/3]">
+      <img alt="Zantry POS Commercial Advertisement" class="w-full h-full object-cover" src="/images/zantry-pos-ad-clean.jpg"/>
       <!-- Top Badges -->
       <div class="absolute top-3 left-3 flex items-center gap-2">
-        <span class="bg-primary/90 backdrop-blur-md text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md flex items-center gap-1.5 border border-white/10">
+        <span class="bg-primary text-white text-xs font-medium px-2.5 py-1 rounded-md shadow-sm">
           Zantry POS Pro
         </span>
-        <span class="hidden sm:inline-flex bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1.5 rounded-full border border-white/10">
+        <span class="hidden sm:inline-flex bg-slate-900/80 text-white text-xs px-2.5 py-1 rounded-md">
           Offline &amp; Cloud
         </span>
       </div>
       <!-- Bottom Ad Overlay -->
-      <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent flex items-end justify-between gap-2">
+      <div class="absolute inset-x-0 bottom-0 p-3.5 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-transparent flex items-end justify-between gap-2">
         <div class="text-white">
-          <p class="text-[11px] sm:text-xs font-bold leading-tight">Simplify Your Business</p>
-          <p class="text-[10px] sm:text-[11px] text-white/80 hidden sm:block">Starting from 200,000 MMK · Multi-Device Ready</p>
+          <p class="text-xs sm:text-sm font-semibold leading-tight">Simplify Your Business</p>
+          <p class="text-[11px] sm:text-xs text-slate-300 hidden sm:block mt-0.5">From 200,000 MMK · Multi-Device Ready</p>
         </div>
-        <span class="bg-white text-primary text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full group-hover:bg-primary group-hover:text-white transition-colors flex items-center gap-1 shadow shrink-0">
+        <span class="bg-white text-primary text-xs font-semibold px-3 py-1.5 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors flex items-center gap-1 shadow-sm shrink-0">
           Explore Plans <span class="material-symbols-outlined text-xs">arrow_forward</span>
         </span>
       </div>
     </div>
   </div>
 </a>
-<!-- Decorative shapes -->
-<div class="absolute -top-10 -right-10 w-48 sm:w-64 h-48 sm:h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-<div class="absolute -bottom-10 -left-10 w-36 sm:w-48 h-36 sm:h-48 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
 </div>
 
 <!-- Text & Buttons Next (Right on Web View) -->
 <div class="z-10 text-center lg:text-left order-2 lg:order-2">
-<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs sm:text-label-sm mb-4 sm:mb-6">
-  Pioneering Digital Solutions &amp; POS Systems
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-200/70 text-slate-800 text-xs font-medium mb-4 sm:mb-5">
+  Point-of-Sale Systems &amp; Software Lab
 </span>
-<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg text-primary mb-4 sm:mb-6 leading-tight tracking-tight font-bold">
-    Building Smart Software for <span class="text-transparent bg-clip-text bg-gradient-to-r from-[rgba(19,41,64,1)] via-[#1d4ed8] to-[#2563eb]">Modern Businesses</span>
+<h1 class="text-3xl sm:text-4xl md:text-5xl text-primary mb-4 sm:mb-5 leading-[1.15] tracking-tight font-bold">
+    Production POS Systems &amp; Custom Engineering
 </h1>
-<p class="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-surface-variant mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0">
-    Empowering enterprises and retail with scalable cloud architecture, intuitive point-of-sale systems, and cutting-edge engineering precision. We turn complex business challenges into seamless digital products.
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+    Zantry Tech builds offline-first point-of-sale systems and reliable custom software for retail, restaurants, and growing businesses across Myanmar.
 </p>
-<div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
-<a href="/portfolio/#zantry-pos" class="w-full sm:w-auto bg-primary text-on-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:shadow-lg transition-all active:scale-95 inline-flex items-center justify-center gap-2 shadow-md">
+<div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
+<a href="/portfolio/#zantry-pos" class="w-full sm:w-auto bg-primary text-on-primary px-6 py-3.5 rounded-xl font-medium text-sm sm:text-base hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2 shadow-sm">
     <span class="material-symbols-outlined text-base">point_of_sale</span> Explore Zantry POS
 </a>
-<a href="/portfolio/" class="w-full sm:w-auto bg-surface/80 backdrop-blur-sm border border-outline/20 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-label-md text-sm sm:text-base font-bold hover:bg-surface transition-all active:scale-95 inline-block text-center">
+<a href="/portfolio/" class="w-full sm:w-auto bg-white border border-outline-variant/60 text-primary px-6 py-3.5 rounded-xl font-medium text-sm sm:text-base hover:bg-slate-50 transition-colors inline-block text-center">
     View Projects
 </a>
 </div>
@@ -235,102 +237,191 @@
 
 </div>
 </section>
-<!-- Services Section -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface" id="services">
+
+<!-- 3 Daily Store Headaches Solved Section -->
+<section class="py-12 sm:py-16 bg-white border-b border-slate-200/80">
 <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-<div class="text-center mb-10 sm:mb-16 max-w-2xl mx-auto">
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-primary mb-3 sm:mb-4">Comprehensive Tech Solutions</h2>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">We provide end-to-end engineering services tailored to your specific business needs and scale.</p>
+  <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+    <span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">
+      Retail Store Operations
+    </span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-2">
+      3 Daily Store Headaches Zantry POS Solves
+    </h2>
+    <p class="text-sm sm:text-base text-on-surface-variant">
+      Say goodbye to unexplained stock loss, end-of-day drawer mismatches, and slow handwritten voucher queues.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Problem 1: Stop Stock Leakage -->
+    <div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-2xl">inventory_2</span>
+        </div>
+        <span class="text-xs font-semibold text-amber-700 block mb-1">Inventory control</span>
+        <h3 class="text-base sm:text-lg font-bold text-primary mb-2">Stopping Stock Leakage</h3>
+        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-4">
+          Every sale automatically deducts items from your live inventory. Real-time stock audit logs eliminate unexplained shrinkage, theft, and expired goods.
+        </p>
+      </div>
+      <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-medium text-primary">
+        <span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+        <span>Live stock deduction &amp; shrinkage alerts</span>
+      </div>
+    </div>
+
+    <!-- Problem 2: Fix Daily Cash Count Errors -->
+    <div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+        </div>
+        <span class="text-xs font-semibold text-emerald-700 block mb-1">Cash reconciliation</span>
+        <h3 class="text-base sm:text-lg font-bold text-primary mb-2">Fixing Daily Cash Count Errors</h3>
+        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-4">
+          Eliminate end-of-shift drawer mismatches. Automated shift cash-in and cash-out logging ensures your physical drawer cash matches your digital sales summary down to the kyat.
+        </p>
+      </div>
+      <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-medium text-primary">
+        <span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+        <span>Shift opening/closing balance accuracy</span>
+      </div>
+    </div>
+
+    <!-- Problem 3: Replace Slow Handwritten Vouchers -->
+    <div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-2xl">receipt_long</span>
+        </div>
+        <span class="text-xs font-semibold text-blue-700 block mb-1">Instant checkout</span>
+        <h3 class="text-base sm:text-lg font-bold text-primary mb-2">Replacing Slow Handwritten Vouchers</h3>
+        <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-4">
+          Replace messy paper voucher pads with sub-second digital receipts. Connect Bluetooth or USB thermal printers for instant branded customer receipts and eliminate checkout queues.
+        </p>
+      </div>
+      <div class="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-medium text-primary">
+        <span class="material-symbols-outlined text-sm text-emerald-600">check_circle</span>
+        <span>Instant thermal &amp; digital vouchers</span>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+</section>
+
+<!-- Services Section -->
+<section class="py-12 sm:py-16 md:py-20 bg-slate-50 border-b border-slate-200/80" id="services">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
+<div class="text-center mb-10 sm:mb-14 max-w-2xl mx-auto">
+<span class="inline-block bg-slate-200/70 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">Capabilities</span>
+<h2 class="text-2xl sm:text-3xl font-bold text-primary mb-2">Software Engineering &amp; Solutions</h2>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Production-ready applications and technical infrastructure built for long-term reliability.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Card 1 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="code">code</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="code">code</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">Software Dev</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Custom enterprise-grade applications built with modern frameworks and robust architectures.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">Custom Software</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Enterprise web platforms and internal tools architected for scalability, clean maintenance, and high uptime.</p>
+</div>
 </div>
 <!-- Card 2 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="smartphone">smartphone</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="smartphone">smartphone</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">Mobile App</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Native and cross-platform mobile experiences that engage users on every device.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">Mobile Applications</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Cross-platform mobile apps for iOS and Android with offline-first local databases and sub-second response.</p>
+</div>
 </div>
 <!-- Card 3 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="language">language</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="point_of_sale">point_of_sale</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">Web App</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Scalable web platforms designed for performance, accessibility, and high conversion.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">Point-of-Sale Systems</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Complete POS setups with thermal receipt printing, barcode scanning, multi-shift cash drawers, and stock sync.</p>
+</div>
 </div>
 <!-- Card 4 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="cloud">cloud</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="cloud">cloud</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">Cloud Solutions</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Optimized cloud infrastructure management for seamless scalability and security.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">Cloud Infrastructure</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Secure automated cloud deployments, weekly automated backups, and resilient failover architecture.</p>
+</div>
 </div>
 <!-- Card 5 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="insights">insights</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">AI &amp; ML</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Intelligent automation and predictive analytics to drive data-driven decision making.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">Business Analytics</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Real-time daily revenue charts, top product sales velocity, and shift performance reports.</p>
+</div>
 </div>
 <!-- Card 6 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="palette">palette</span>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="palette">palette</span>
 </div>
-<h3 class="font-headline-md text-lg sm:text-headline-md font-bold mb-3">UI/UX Design</h3>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Research-driven design systems that prioritize user flow and brand identity.</p>
+<h3 class="font-headline-md text-base sm:text-lg font-bold mb-2 text-primary">UI/UX Design</h3>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Ergonomic, distraction-free interfaces designed for fast-paced retail cashiers and busy store managers.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Why Choose Us (Asymmetric Layout) -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface-container-low">
-<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+
+<!-- Why Choose Us -->
+<section class="py-12 sm:py-16 md:py-20 bg-white border-b border-slate-200/80">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 <div class="order-2 lg:order-1">
-<img alt="Team Collaboration" class="rounded-3xl shadow-xl w-full object-cover" data-alt="A professional team of software engineers collaborating in a modern, glass-walled office space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO2AZLDumJczb6UcHXvxWGB_uBAnEPJL0vHafT_69T31wNDe9Vi4ksC7j6rit9Sxl1c9hj2Y1bK8GBPT5Sz4avXWrdFhKzL_sTuy2UMx7FYpaTbEGBzTtsAOWFfClij592y1BH0PRJElR64_pFijOpntPaak38NQfbYbaiZlIL28iIgb6tcXX15vqpW-3ZZfjfZTNxleowZbOOAi28HUqoInIm63-r68tFDl8bRey4Cu5Plaqn3o_c_IbiQk7rW5llsamOBRACy0g"/>
+<img alt="Team Collaboration" class="rounded-2xl border border-slate-200 shadow-sm w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO2AZLDumJczb6UcHXvxWGB_uBAnEPJL0vHafT_69T31wNDe9Vi4ksC7j6rit9Sxl1c9hj2Y1bK8GBPT5Sz4avXWrdFhKzL_sTuy2UMx7FYpaTbEGBzTtsAOWFfClij592y1BH0PRJElR64_pFijOpntPaak38NQfbYbaiZlIL28iIgb6tcXX15vqpW-3ZZfjfZTNxleowZbOOAi28HUqoInIm63-r68tFDl8bRey4Cu5Plaqn3o_c_IbiQk7rW5llsamOBRACy0g"/>
 </div>
-<div class="order-1 lg:order-2 space-y-6 sm:space-y-10">
+<div class="order-1 lg:order-2 space-y-6 sm:space-y-8">
 <div>
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-primary mb-3 sm:mb-6">Why Partner With Us?</h2>
-<p class="font-body-md sm:font-body-lg text-sm sm:text-base text-on-surface-variant">We combine technical mastery with strategic thinking to ensure your product doesn't just work—it wins.</p>
+<span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">Why Zantry Tech</span>
+<h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3">Direct Engineering &amp; Reliable Support</h2>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant">We build software that solves real operational bottlenecks without bloated subscriptions or brittle code.</p>
 </div>
-<div class="space-y-6 sm:space-y-8">
-<div class="flex gap-4 sm:gap-6">
-<div class="flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-primary text-on-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-lg sm:text-2xl" data-icon="architecture">architecture</span>
-</div>
-<div>
-<h4 class="font-headline-md text-base sm:text-headline-md font-bold mb-1 sm:mb-2">Scalable Architecture</h4>
-<p class="text-on-surface-variant text-xs sm:text-base">Systems designed to grow from 1,000 to 1,000,000 users without breaking a sweat.</p>
-</div>
-</div>
-<div class="flex gap-4 sm:gap-6">
-<div class="flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-primary text-on-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-lg sm:text-2xl" data-icon="speed">speed</span>
+<div class="space-y-5">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" data-icon="offline_bolt">offline_bolt</span>
 </div>
 <div>
-<h4 class="font-headline-md text-base sm:text-headline-md font-bold mb-1 sm:mb-2">Fast Development</h4>
-<p class="text-on-surface-variant text-xs sm:text-base">Agile methodologies that prioritize speed-to-market without compromising code quality.</p>
+<h4 class="font-headline-md text-sm sm:text-base font-bold mb-1 text-primary">Offline-First Resilience</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm">Keep checking out customers even during internet dropouts. Data syncs automatically once back online.</p>
 </div>
 </div>
-<div class="flex gap-4 sm:gap-6">
-<div class="flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-primary text-on-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-lg sm:text-2xl" data-icon="security">security</span>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" data-icon="devices">devices</span>
 </div>
 <div>
-<h4 class="font-headline-md text-base sm:text-headline-md font-bold mb-1 sm:mb-2">Secure Systems</h4>
-<p class="text-on-surface-variant text-xs sm:text-base">Security-first mindset integrated into every stage of the development lifecycle.</p>
+<h4 class="font-headline-md text-sm sm:text-base font-bold mb-1 text-primary">Zero Expensive Hardware Lock-in</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm">Run on your existing Android tablets, iPads, PCs, or smartphones with standard Bluetooth/USB printers.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-md text-sm sm:text-base font-bold mb-1 text-primary">Local Myanmar Support</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm">Direct assistance via phone, Viber, and on-site setup for stores across Myanmar.</p>
 </div>
 </div>
 </div>
@@ -339,37 +430,29 @@
 </section>
 
 <!-- Flagship Product: Zantry POS Highlight Banner -->
-<section class="py-12 sm:py-16 bg-surface-container-low border-y border-outline-variant/30">
+<section class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200/80">
 <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-  <div class="glass-card rounded-3xl border border-primary/20 overflow-hidden shadow-lg p-6 sm:p-10 bg-gradient-to-br from-white via-surface to-surface-container">
+  <div class="rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 bg-white">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
       <!-- Image showcase -->
       <div class="lg:col-span-6 relative">
-        <div class="relative rounded-2xl overflow-hidden shadow-md bg-slate-900 border border-outline-variant/30 group">
-          <img src="/images/zantry-pos-overview.jpg" alt="Zantry POS Pro Multi-Platform System" class="w-full h-auto aspect-[16/10] object-cover transition-transform duration-500 group-hover:scale-105"/>
-          <div class="absolute top-3 left-3 bg-primary text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+        <div class="relative rounded-xl overflow-hidden shadow-sm bg-slate-900 border border-slate-200">
+          <img src="/images/zantry-pos-overview.jpg" alt="Zantry POS Pro Multi-Platform System" class="w-full h-auto aspect-[16/10] object-cover"/>
+          <div class="absolute top-3 left-3 bg-primary text-white text-xs font-medium px-2.5 py-1 rounded-md shadow-sm">
             Flagship Product
           </div>
-          <div class="absolute bottom-3 right-3 bg-black/75 backdrop-blur-sm text-white text-[11px] px-3 py-1 rounded-full">
+          <div class="absolute bottom-3 right-3 bg-slate-900/80 text-white text-xs px-2.5 py-1 rounded-md">
             iOS · Android · Windows · Web
-          </div>
-        </div>
-        <!-- Floating secondary badge / phone teaser -->
-        <div class="hidden sm:flex absolute -bottom-5 -right-5 bg-white p-2 rounded-2xl shadow-xl border border-outline-variant/30 items-center gap-3 max-w-xs">
-          <img src="/images/zantry-pos-mobile.jpg" alt="Zantry Mobile POS" class="w-14 h-14 object-cover rounded-xl"/>
-          <div>
-            <p class="text-[11px] font-bold text-primary leading-tight">Device တွေထပ်ဝယ်စရာမလို</p>
-            <p class="text-[10px] text-secondary">Use your phone or tablet directly</p>
           </div>
         </div>
       </div>
 
       <!-- Content -->
       <div class="lg:col-span-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-3">
+        <span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">
           Point of Sale Engineering
-        </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mb-3 leading-tight tracking-tight">
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-3 leading-tight tracking-tight">
           Zantry POS | Simplify Your Business
         </h2>
         <p class="text-sm sm:text-base text-on-surface-variant mb-5 leading-relaxed">
@@ -378,29 +461,29 @@
 
         <!-- Feature Points -->
         <div class="grid grid-cols-2 gap-3 mb-6">
-          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary">
-            <span class="material-symbols-outlined text-primary text-lg">shield</span>
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-primary">
+            <span class="material-symbols-outlined text-primary text-base">shield</span>
             Security First (Offline Setup)
           </div>
-          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary">
-            <span class="material-symbols-outlined text-primary text-lg">devices</span>
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-primary">
+            <span class="material-symbols-outlined text-primary text-base">devices</span>
             Multi-Platform Cloud
           </div>
-          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary">
-            <span class="material-symbols-outlined text-primary text-lg">bar_chart</span>
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-primary">
+            <span class="material-symbols-outlined text-primary text-base">bar_chart</span>
             Comprehensive Reports
           </div>
-          <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary">
-            <span class="material-symbols-outlined text-primary text-lg">cloud_sync</span>
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-primary">
+            <span class="material-symbols-outlined text-primary text-base">cloud_sync</span>
             Weekly Data Backup
           </div>
         </div>
 
         <!-- Pricing snippet -->
-        <div class="p-3.5 rounded-xl bg-surface border border-outline-variant/30 flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-between gap-3 mb-6">
           <div>
             <span class="text-xs text-secondary font-medium block">Starting from</span>
-            <span class="text-lg sm:text-xl font-extrabold text-primary">200,000 MMK</span>
+            <span class="text-lg sm:text-xl font-bold text-primary tabular-nums">200,000 MMK</span>
             <span class="text-xs text-on-surface-variant"> (Lite 1-Time) or Cloud Plans</span>
           </div>
           <div class="text-right">
@@ -410,10 +493,10 @@
         </div>
 
         <div class="flex flex-wrap gap-3 items-center">
-          <a href="/portfolio/#zantry-pos" class="bg-primary text-white px-6 py-3 rounded-full font-label-md text-xs sm:text-sm font-bold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+          <a href="/portfolio/#zantry-pos" class="bg-primary text-white px-5 py-3 rounded-xl font-medium text-xs sm:text-sm hover:bg-primary/90 transition-colors shadow-sm">
             View POS Plans &amp; Live Demo
           </a>
-          <a href="/contact/" class="border border-outline-variant hover:border-primary text-primary px-6 py-3 rounded-full font-label-md text-xs sm:text-sm font-bold transition-all">
+          <a href="/contact/" class="border border-slate-300 hover:border-primary text-primary px-5 py-3 rounded-xl font-medium text-xs sm:text-sm transition-colors">
             Book Consultation
           </a>
         </div>
@@ -424,224 +507,151 @@
 </section>
 
 <!-- Portfolio -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface" id="portfolio">
+<section class="py-12 sm:py-16 md:py-20 bg-white border-b border-slate-200/80" id="portfolio">
 <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 gap-6">
 <div>
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-primary mb-2 sm:mb-4">Our Portfolio</h2>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant">A selection of our most impactful digital engineering projects.</p>
+<h2 class="text-2xl sm:text-3xl font-bold text-primary mb-2">Selected Work</h2>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant">Production systems and digital products built by Zantry Tech.</p>
 </div>
-<div class="flex flex-wrap gap-1.5 sm:gap-2 bg-surface-container-high p-1 rounded-2xl sm:rounded-full">
-<button class="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-primary text-on-primary font-label-md text-xs sm:text-label-md shadow-sm font-semibold">All</button>
-<button class="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-on-surface-variant font-label-md text-xs sm:text-label-md hover:bg-surface-container-highest transition-colors font-medium">POS</button>
-<button class="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-on-surface-variant font-label-md text-xs sm:text-label-md hover:bg-surface-container-highest transition-colors font-medium">Fintech</button>
-<button class="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-on-surface-variant font-label-md text-xs sm:text-label-md hover:bg-surface-container-highest transition-colors font-medium">Cloud</button>
+<div class="flex flex-wrap gap-1.5 sm:gap-2 bg-slate-100 p-1 rounded-xl">
+<button class="px-4 py-1.5 rounded-lg bg-primary text-on-primary text-xs sm:text-sm font-medium shadow-sm">All</button>
+<button class="px-4 py-1.5 rounded-lg text-slate-700 text-xs sm:text-sm hover:bg-slate-200 transition-colors font-medium">POS</button>
+<button class="px-4 py-1.5 rounded-lg text-slate-700 text-xs sm:text-sm hover:bg-slate-200 transition-colors font-medium">Fintech</button>
+<button class="px-4 py-1.5 rounded-lg text-slate-700 text-xs sm:text-sm hover:bg-slate-200 transition-colors font-medium">Cloud</button>
 </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-gutter">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Project 1: Zantry POS Pro -->
-<div class="group cursor-pointer" onclick="window.location.href='/portfolio/#zantry-pos'">
-<div class="overflow-hidden rounded-2xl mb-4 relative bg-slate-900 aspect-[4/3]">
-<img alt="Zantry POS Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/images/zantry-pos-overview.jpg"/>
-<span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow">Featured</span>
+<div class="cursor-pointer" onclick="window.location.href='/portfolio/#zantry-pos'">
+<div class="overflow-hidden rounded-xl mb-3 relative bg-slate-900 aspect-[4/3] border border-slate-200">
+<img alt="Zantry POS Pro" class="w-full h-full object-cover" src="/images/zantry-pos-overview.jpg"/>
+<span class="absolute top-2.5 left-2.5 bg-primary text-white text-xs font-medium px-2 py-0.5 rounded-md shadow-sm">Featured</span>
 </div>
-<span class="text-secondary font-label-sm text-label-sm tracking-wider uppercase">POS / FINTECH</span>
-<h4 class="font-headline-md text-headline-md mt-1 group-hover:text-primary transition-colors">Zantry POS Pro</h4>
+<span class="text-xs font-medium text-slate-500">POS / Retail</span>
+<h4 class="font-headline-md text-base sm:text-lg font-bold mt-1 text-primary">Zantry POS Pro</h4>
 <p class="text-xs sm:text-sm text-on-surface-variant mt-1 line-clamp-2">Multi-platform offline &amp; cloud POS system for retail, dining &amp; supermarkets with real-time analytics.</p>
 </div>
 <!-- Project 2: Zantry POS Mobile -->
-<div class="group cursor-pointer" onclick="window.location.href='/portfolio/#zantry-pos'">
-<div class="overflow-hidden rounded-2xl mb-4 relative bg-slate-900 aspect-[4/3]">
-<img alt="Zantry POS Mobile App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/images/zantry-pos-mobile.jpg"/>
+<div class="cursor-pointer" onclick="window.location.href='/portfolio/#zantry-pos'">
+<div class="overflow-hidden rounded-xl mb-3 relative bg-slate-900 aspect-[4/3] border border-slate-200">
+<img alt="Zantry POS Mobile App" class="w-full h-full object-cover" src="/images/zantry-pos-mobile.jpg"/>
 </div>
-<span class="text-secondary font-label-sm text-label-sm tracking-wider uppercase">MOBILE / UX</span>
-<h4 class="font-headline-md text-headline-md mt-1 group-hover:text-primary transition-colors">Zantry POS Mobile</h4>
+<span class="text-xs font-medium text-slate-500">Mobile / Cashier</span>
+<h4 class="font-headline-md text-base sm:text-lg font-bold mt-1 text-primary">Zantry POS Mobile</h4>
 <p class="text-xs sm:text-sm text-on-surface-variant mt-1 line-clamp-2">အချိန်၊ နေရာမရွေး Device မရွေး — Lightweight cashier app running on any smartphone or tablet.</p>
 </div>
 <!-- Project 3: NexGen Analytics -->
-<div class="group cursor-pointer" onclick="window.location.href='/portfolio/'">
-<div class="overflow-hidden rounded-2xl mb-4">
-<img alt="NexGen Analytics" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated fin-tech analytics dashboard with high-contrast data visualization." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCySJtpja4TyihhMi_NNEuNEd3N-Xc0h2Y5ozUd8p_ya5OZXM53AdSzr_M2mDqLqZ5E-0hKSbaZ1rXbrHuRzdHUTCUrcC68eo0BMApYSBno5xHn2j7Zriibvdaro7SxYeqPTZ_0Sw5lXwArNO60iMLEn9PJolNlJ4COytjCCQVkphDF6QPuHSDLWa0eFThDfqkY5TZO9WHn6-EU4p7db2rnpnZytgd86nqAvj_g93XonSHunzdYtiUPOS66WOV4DonunPapv8T-tD4"/>
+<div class="cursor-pointer" onclick="window.location.href='/portfolio/'">
+<div class="overflow-hidden rounded-xl mb-3 border border-slate-200">
+<img alt="NexGen Analytics" class="w-full aspect-[4/3] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCySJtpja4TyihhMi_NNEuNEd3N-Xc0h2Y5ozUd8p_ya5OZXM53AdSzr_M2mDqLqZ5E-0hKSbaZ1rXbrHuRzdHUTCUrcC68eo0BMApYSBno5xHn2j7Zriibvdaro7SxYeqPTZ_0Sw5lXwArNO60iMLEn9PJolNlJ4COytjCCQVkphDF6QPuHSDLWa0eFThDfqkY5TZO9WHn6-EU4p7db2rnpnZytgd86nqAvj_g93XonSHunzdYtiUPOS66WOV4DonunPapv8T-tD4"/>
 </div>
-<span class="text-secondary font-label-sm text-label-sm tracking-wider uppercase">Fintech</span>
-<h4 class="font-headline-md text-headline-md mt-1 group-hover:text-primary transition-colors">NexGen Analytics</h4>
+<span class="text-xs font-medium text-slate-500">Fintech / Analytics</span>
+<h4 class="font-headline-md text-base sm:text-lg font-bold mt-1 text-primary">NexGen Analytics</h4>
 <p class="text-xs sm:text-sm text-on-surface-variant mt-1 line-clamp-2">Real-time market analytics with low-latency processing and intuitive visual dashboards.</p>
 </div>
-<!-- Project 4: Luxe Retail Experience -->
-<div class="group cursor-pointer" onclick="window.location.href='/portfolio/'">
-<div class="overflow-hidden rounded-2xl mb-4">
-<img alt="Luxe Retail Platform" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end e-commerce interface showcasing luxury fashion products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDU8grUuNIMuvaEfXO0MOX4ZGp4y9YYjgrCfMHfzHQQY0ZzuZkAXvk0-61kDGo_kFrR_NWTFlx9cz78yuzJiTCyV7BPO001MYdr0UVsSD4y37doOJTRvDtOorcI2KqxvznOGrkcmvYLOAX_5lOcfDfkwdkgUHfszNatXxneqSL84sAkvhDuz7MARMWaMVajCVmwwiETohWnOjcGV6d7qi_3Kk5HX8eNhi_onQI3D2U_1fNB4nofWxLSdaAVbSxQyOVn7G0mHO1v-k"/>
-</div>
-<span class="text-secondary font-label-sm text-label-sm tracking-wider uppercase">E-Commerce</span>
-<h4 class="font-headline-md text-headline-md mt-1 group-hover:text-primary transition-colors">Luxe Retail Experience</h4>
-<p class="text-xs sm:text-sm text-on-surface-variant mt-1 line-clamp-2">Unified omnichannel retail shopping ecosystem prioritizing speed and elegance.</p>
-</div>
-<!-- Project 5: CloudSphere Hub -->
-<div class="group cursor-pointer" onclick="window.location.href='/portfolio/'">
-<div class="overflow-hidden rounded-2xl mb-4">
-<img alt="CloudSphere Hub" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic cloud infrastructure management portal displayed on multiple sleek monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZfI8Ljjkq62k0zNT3h-6kHJL01QhmB7EDHhrRLSXR0vBmzqjSFgQeZNktemwvLX-yRwqys2cY0cXOom4ZbOK48XWhqRLqawMq_KygoMYPPPFl-lKiIvWSKS5Gk3ecR-pz7f1sFiLjRRUGaggcq4DGgpPNNsNHxIiHxi-ZytQ4R8wl4bSozOoSVSmQg2ZsDN67zoL8Dc-y-WFy1AvFTJDlw6MWkW8J5ePpXyNvozWONt6L_mSFM5mbrj2kGOilqi1DFSyjRnjZL8g"/>
-</div>
-<span class="text-secondary font-label-sm text-label-sm tracking-wider uppercase">Cloud / Infra</span>
-<h4 class="font-headline-md text-headline-md mt-1 group-hover:text-primary transition-colors">CloudSphere Hub</h4>
-<p class="text-xs sm:text-sm text-on-surface-variant mt-1 line-clamp-2">Resilient, auto-scaling backend infrastructure for high-traffic SaaS enterprises.</p>
-</div>
 </div>
 </div>
 </section>
+
 <!-- Process Timeline -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface-container" id="process">
+<section class="py-12 sm:py-16 md:py-20 bg-slate-50 border-b border-slate-200/80" id="process">
 <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-<div class="text-center mb-10 sm:mb-16">
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-primary mb-3 sm:mb-4">Our Engineering Process</h2>
-<p class="font-body-md text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto">From concept to deployment, we follow a rigorous, transparent workflow to ensure project success.</p>
+<div class="text-center mb-10 sm:mb-14">
+<span class="inline-block bg-slate-200/70 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">Workflow</span>
+<h2 class="text-2xl sm:text-3xl font-bold text-primary mb-2">Our Delivery Process</h2>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant max-w-xl mx-auto">From initial scoping to store rollout, every step is transparent and predictable.</p>
 </div>
-<div class="relative">
-<!-- Connector line -->
-<div class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-outline/20 -translate-y-1/2"></div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Step 1 -->
-<div class="relative glass-card p-6 sm:p-8 rounded-2xl z-10 hover:border-primary transition-colors">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 sm:mb-6">1</div>
-<h4 class="font-headline-md text-lg sm:text-headline-md font-bold mb-2">Discovery</h4>
-<p class="text-on-surface-variant text-xs sm:text-body-md">In-depth research and requirement gathering to align with business goals.</p>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm mb-4">1</div>
+<h4 class="font-headline-md text-base font-bold mb-1.5 text-primary">Discovery</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed">Understanding your store workflow, inventory size, device setup, and operational needs.</p>
+</div>
 </div>
 <!-- Step 2 -->
-<div class="relative glass-card p-6 sm:p-8 rounded-2xl z-10 hover:border-primary transition-colors">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 sm:mb-6">2</div>
-<h4 class="font-headline-md text-lg sm:text-headline-md font-bold mb-2">Design</h4>
-<p class="text-on-surface-variant text-xs sm:text-body-md">Creating high-fidelity wireframes and user-centric visual architectures.</p>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm mb-4">2</div>
+<h4 class="font-headline-md text-base font-bold mb-1.5 text-primary">Configuration</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed">Tailoring receipt formats, product categories, user permissions, and hardware integrations.</p>
+</div>
 </div>
 <!-- Step 3 -->
-<div class="relative glass-card p-6 sm:p-8 rounded-2xl z-10 hover:border-primary transition-colors">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 sm:mb-6">3</div>
-<h4 class="font-headline-md text-lg sm:text-headline-md font-bold mb-2">Development</h4>
-<p class="text-on-surface-variant text-xs sm:text-body-md">Clean code implementation using scalable and modern technology stacks.</p>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm mb-4">3</div>
+<h4 class="font-headline-md text-base font-bold mb-1.5 text-primary">Testing &amp; Staff Training</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed">Simulating live shifts, training cashiers, and verifying offline-to-cloud synchronization.</p>
+</div>
 </div>
 <!-- Step 4 -->
-<div class="relative glass-card p-6 sm:p-8 rounded-2xl z-10 hover:border-primary transition-colors">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 sm:mb-6">4</div>
-<h4 class="font-headline-md text-lg sm:text-headline-md font-bold mb-2">Deployment</h4>
-<p class="text-on-surface-variant text-xs sm:text-body-md">Rigorous testing followed by seamless launch and ongoing support.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface overflow-hidden">
-<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-<div class="text-center mb-10 sm:mb-16">
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold text-primary mb-3 sm:mb-4">Trusted by Industry Leaders</h2>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-gutter">
-<!-- Testimonial 1 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-sm sm:text-base text-on-surface mb-6 sm:mb-8 italic">"Zantry Tech transformed our legacy infrastructure into a high-performance cloud ecosystem. Their technical depth is unparalleled."</p>
-<div class="flex items-center gap-4">
-<img alt="Client Avatar" class="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFSgAtwZi52ZsLtKVSyozu985ChxAjM69DvjsCww7BqXYOmkSJMNGmov7mnygVxGrQQwKGyHghgUmxFbuEDyS8jH4hPHqMwtI-4ejjpLdZsoYGrO5xv2TfuzO9THJGkp64XVX9Hj9G1dzA9SM4ch0bysL9qhekhwiMtt3J_DVI7au8zn2xunSoK3mnm-jEW8_JAwTlFuxnyFj8KlfSEG6txAZ_5IEipwzlgr8vuE1e3W34XulFyi_fYq-g27lCZgKX5SdBzq5GQjU"/>
+<div class="rounded-xl p-6 border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
 <div>
-<div class="font-label-md text-sm sm:text-base text-primary font-bold">Mark Henderson</div>
-<div class="font-label-sm text-xs text-on-surface-variant">CTO, DataStream</div>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-sm sm:text-base text-on-surface mb-6 sm:mb-8 italic">"The mobile app they built for us received 4.9 stars on launch day. Their UI/UX team understands user behavior like no other."</p>
-<div class="flex items-center gap-4">
-<img alt="Client Avatar" class="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1eMIumqWy1118SVhFZtk-3Y9Smpu_KjNceyMCd-hRlc2y-Pf8JXtHDHhmWyMF13dxdIk-1irDMmoiHwwDveC2UzJLJPCBau8YglKCXvd9oZQhd1W-VytT-gyYPmxAOz336zRz0x7XeHBloevANpHaIcJc2rNhj7diyDQ5AXMm8uNar2KFwhyvY8X_5jpPCsI3vmSKPvTelRsnB2SwCDvFAnBsCQlxmgL5fvKSgJom_gfFm3szG9mMu6NjvqYR1Qy5nePLAxCjIK4"/>
-<div>
-<div class="font-label-md text-sm sm:text-base text-primary font-bold">Sarah Jenkins</div>
-<div class="font-label-sm text-xs text-on-surface-variant">Product Head, Velox</div>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="glass-card p-6 sm:p-8 rounded-2xl sm:col-span-2 lg:col-span-1">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-sm sm:text-base text-on-surface mb-6 sm:mb-8 italic">"Professional, fast, and communicative. Zantry Tech is our go-to partner for all complex engineering requirements."</p>
-<div class="flex items-center gap-4">
-<img alt="Client Avatar" class="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApXpE9EpvFwyNJ_tWSrnQfXy1dqJ8LPFsGgWpx0xSvi_v1K6BLes5I7xVvyQwCIV-VQ3yYi8GESwOUc7vXsp1EkOOlv9aZbiQMD6TteF3VY4EUEw4jdZfsUWDdUKfWnL4gDvQ9oPCGJbVHNSivOeZyUBVhHQ4XUfc3X5GyamCV09dkYMVsp9doeQq1WgPZuVEHFWrGLjk2gMZmgSMmqf6580SyJWBYX457TtGNhCZDllPzNkPIfOLmz0kFu6Awgg4GkFoRE5TaQ6A"/>
-<div>
-<div class="font-label-md text-sm sm:text-base text-primary font-bold">David Chen</div>
-<div class="font-label-sm text-xs text-on-surface-variant">CEO, InnovateX</div>
-</div>
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm mb-4">4</div>
+<h4 class="font-headline-md text-base font-bold mb-1.5 text-primary">Rollout &amp; Support</h4>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed">Go-live on store floor with direct phone hotline and ongoing data backup protection.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Contact Section -->
-<section class="py-12 sm:py-16 md:py-24 bg-surface-container-low" id="contact">
+<section class="py-12 sm:py-16 md:py-20 bg-slate-50" id="contact">
 <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop">
-<div class="glass-card rounded-2xl sm:rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-<div class="p-6 sm:p-10 lg:p-16 bg-primary text-on-primary">
-<h2 class="text-2xl sm:text-3xl md:text-headline-xl font-bold mb-4 sm:mb-6">Ready to Build Something Extraordinary?</h2>
-<p class="font-body-md sm:font-body-lg mb-8 sm:mb-12 opacity-80 text-sm sm:text-base">Schedule a consultation with our senior engineers today and discover how we can accelerate your digital roadmap.</p>
-<div class="space-y-4 sm:space-y-6 text-sm sm:text-base">
-<div class="flex items-center gap-3 sm:gap-4">
-<span class="material-symbols-outlined text-lg sm:text-2xl">mail</span>
+<div class="rounded-2xl border border-slate-200 overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-sm bg-white">
+<div class="p-6 sm:p-10 lg:p-14 bg-primary text-on-primary flex flex-col justify-between">
+<div>
+<span class="inline-block bg-white/10 text-white px-3 py-1 rounded-md text-xs font-medium mb-4">Direct Contact</span>
+<h2 class="text-2xl sm:text-3xl font-bold mb-3">Get in Touch with Zantry Tech</h2>
+<p class="font-body-md text-sm sm:text-base text-slate-200 mb-8 leading-relaxed">Whether you need a turnkey POS setup for your retail store or custom software engineering, our team is ready to help.</p>
+</div>
+<div class="space-y-4 text-sm sm:text-base">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-slate-300">mail</span>
 <a href="mailto:zantrytech@gmail.com" class="font-body-md hover:underline">zantrytech@gmail.com</a>
 </div>
-<div class="flex items-center gap-3 sm:gap-4">
-<span class="material-symbols-outlined text-lg sm:text-2xl">call</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-slate-300">call</span>
 <div class="flex flex-wrap items-center gap-x-2 font-body-md">
-<a href="tel:+959965157402" class="hover:underline">+959965157402</a>,
-<a href="tel:+959790383481" class="hover:underline">+959790383481</a>
+<a href="tel:09660227671" class="hover:underline">09660227671</a>,
+<a href="tel:09790383481" class="hover:underline">09790383481</a>
 </div>
 </div>
-<div class="flex items-center gap-3 sm:gap-4">
-<span class="material-symbols-outlined text-lg sm:text-2xl">location_on</span>
-<span class="font-body-md">Silicon Valley, CA</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-slate-300">location_on</span>
+<span class="font-body-md text-slate-200">Yangon, Myanmar (Nationwide support &amp; store visits)</span>
 </div>
 </div>
 </div>
-<div class="p-6 sm:p-10 lg:p-16 bg-surface">
-<form class="space-y-4 sm:space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-<div class="space-y-1.5 sm:space-y-2">
-<label class="font-label-md text-xs sm:text-sm font-semibold text-primary">Full Name</label>
-<input class="w-full px-4 py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-sm sm:text-base" placeholder="John Doe" type="text" required/>
+<div class="p-6 sm:p-10 lg:p-14 bg-white">
+<form class="space-y-4 sm:space-y-5" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold text-slate-700">Full Name</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-1 focus:ring-primary transition-colors outline-none text-sm text-slate-900" placeholder="Your Name" type="text" required/>
 </div>
-<div class="space-y-1.5 sm:space-y-2">
-<label class="font-label-md text-xs sm:text-sm font-semibold text-primary">Email Address</label>
-<input class="w-full px-4 py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-sm sm:text-base" placeholder="john@example.com" type="email" required/>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold text-slate-700">Email Address</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-1 focus:ring-primary transition-colors outline-none text-sm text-slate-900" placeholder="name@example.com" type="email" required/>
 </div>
 </div>
-<div class="space-y-1.5 sm:space-y-2">
-<label class="font-label-md text-xs sm:text-sm font-semibold text-primary">Subject</label>
-<select class="w-full px-4 py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-sm sm:text-base bg-white">
-<option>Software Development</option>
-<option>Mobile App Project</option>
-<option>Cloud Infrastructure</option>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold text-slate-700">Inquiry Type</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-1 focus:ring-primary transition-colors outline-none text-sm bg-white text-slate-900">
+<option>Zantry POS Consultation</option>
+<option>Custom Software Development</option>
+<option>Mobile Application</option>
 <option>Other</option>
 </select>
 </div>
-<div class="space-y-1.5 sm:space-y-2">
-<label class="font-label-md text-xs sm:text-sm font-semibold text-primary">Message</label>
-<textarea class="w-full px-4 py-3 rounded-xl border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none resize-none text-sm sm:text-base" placeholder="Tell us about your project..." rows="4" required></textarea>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold text-slate-700">Message</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-1 focus:ring-primary transition-colors outline-none resize-none text-sm text-slate-900" placeholder="Tell us about your store or project..." rows="4" required></textarea>
 </div>
-<button type="submit" class="w-full bg-primary text-on-primary py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base hover:shadow-lg transition-all active:scale-95 shadow-md">
+<button type="submit" class="w-full bg-primary text-on-primary py-3 rounded-xl font-medium text-sm sm:text-base hover:bg-primary/90 transition-colors shadow-sm">
     Send Message
 </button>
 </form>
@@ -651,55 +661,48 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-low border-t border-outline-variant/10 w-full">
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop py-10 sm:py-16">
-<div class="space-y-4 sm:space-y-6 sm:col-span-2 md:col-span-1">
+<footer class="bg-white border-t border-slate-200 w-full">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop py-12">
+<div class="space-y-4 sm:col-span-2 md:col-span-1">
 <div class="flex items-center gap-2.5">
 <img alt="Zantry Tech Logo" class="h-8 w-8 rounded-lg object-contain" src="/images/logo.png" onerror="this.src='/favicon.png'"/>
-<span class="font-headline-sm text-base sm:text-headline-sm font-bold text-primary">Zantry Tech</span>
+<span class="font-headline-sm text-base font-bold text-primary">Zantry Tech</span>
 </div>
-<p class="font-body-md text-xs sm:text-sm text-on-surface-variant max-w-xs leading-relaxed">Engineering excellence for the modern web. We build the future of software, one line at a time.</p>
-<div class="flex gap-3">
-<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/"><span class="material-symbols-outlined text-lg">public</span></a>
-<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/contact/"><span class="material-symbols-outlined text-lg">share</span></a>
-<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/contact/"><span class="material-symbols-outlined text-lg">mail</span></a>
-</div>
+<p class="font-body-md text-xs sm:text-sm text-on-surface-variant max-w-xs leading-relaxed">Production point-of-sale systems and reliable software engineering for modern businesses.</p>
 </div>
 <div>
-<h4 class="font-label-md text-xs sm:text-sm font-bold text-primary mb-4 sm:mb-6 uppercase tracking-wider">Quick Links</h4>
-<ul class="space-y-2.5 sm:space-y-4 text-xs sm:text-sm">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/">Home</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/services/">Services</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/portfolio/">Our Work</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/process/">Process</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/contact/">Contact</a></li>
+<h4 class="text-xs font-bold text-primary mb-3 text-slate-900">Quick links</h4>
+<ul class="space-y-2 text-xs sm:text-sm">
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/">Home</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/services/">Services</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/portfolio/">Our Work</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/process/">Process</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/contact/">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-label-md text-xs sm:text-sm font-bold text-primary mb-4 sm:mb-6 uppercase tracking-wider">Services</h4>
-<ul class="space-y-2.5 sm:space-y-4 text-xs sm:text-sm">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/services/">Software Dev</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/services/">Mobile Apps</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/services/">Cloud Solutions</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors hover:translate-x-1 inline-block transition-transform" href="/services/">AI &amp; ML</a></li>
+<h4 class="text-xs font-bold text-primary mb-3 text-slate-900">Solutions</h4>
+<ul class="space-y-2 text-xs sm:text-sm">
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/portfolio/#zantry-pos">Zantry POS Pro</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/services/">Custom Software</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/services/">Mobile Apps</a></li>
+<li><a class="text-slate-600 hover:text-primary transition-colors" href="/services/">Cloud Infrastructure</a></li>
 </ul>
 </div>
-<div class="space-y-4 sm:space-y-6 sm:col-span-2 md:col-span-1">
-<h4 class="font-label-md text-xs sm:text-sm font-bold text-primary mb-2 sm:mb-6 uppercase tracking-wider">Newsletter</h4>
-<p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Stay updated with the latest tech trends and engineering insights.</p>
-<div class="relative max-w-sm">
-<input class="w-full bg-surface-container-high border-none rounded-full px-5 py-2.5 sm:py-3 pr-12 focus:ring-1 focus:ring-primary outline-none text-xs sm:text-sm" placeholder="email@example.com" type="email"/>
-<button class="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 sm:w-9 h-8 sm:h-9 bg-primary text-on-primary rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
+<div class="space-y-3 sm:col-span-2 md:col-span-1">
+<h4 class="text-xs font-bold text-primary mb-2 text-slate-900">Direct support</h4>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Call our team daily for POS setup and technical support.</p>
+<div class="text-sm font-semibold text-primary">
+<a href="tel:09660227671" class="hover:underline block">09660227671</a>
+<a href="tel:09790383481" class="hover:underline block mt-0.5">09790383481</a>
 </div>
 </div>
 </div>
-<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop py-6 sm:py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-<p class="font-label-md text-xs sm:text-sm text-on-surface-variant">© 2024 Zantry Tech. Engineering Excellence.</p>
-<div class="flex gap-6 text-xs sm:text-sm">
-<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors" href="/contact/">Privacy Policy</a>
-<a class="font-label-md text-on-surface-variant hover:text-primary transition-colors" href="/contact/">Terms of Service</a>
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-margin-desktop py-6 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<p class="text-xs text-slate-500">© 2026 Zantry Tech. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-500">
+<a class="hover:text-primary transition-colors" href="/contact/">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="/contact/">Terms of Service</a>
 </div>
 </div>
 </footer>
@@ -731,17 +734,6 @@
         });
       });
     }
-
-    // Micro-interactions and floating effect
-    const floatElements = document.querySelectorAll('.animate-float');
-    floatElements.forEach(el => {
-      let pos = 0;
-      setInterval(() => {
-        pos += 0.05;
-        const y = Math.sin(pos) * 8;
-        el.style.transform = `translateY(${y}px)`;
-      }, 25);
-    });
   })();
 </script>
 </body></html>

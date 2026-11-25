@@ -23,13 +23,15 @@ export const projectsData = [
       { label: 'Starter License', value: '200K MMK', change: '1-Time Purchase' },
       { label: 'Offline Availability', value: '100%', change: 'Zero Downtime' }
     ],
-    challenge: 'Retailers, coffee shops, and restaurants in Myanmar frequently face unreliable internet connectivity and exorbitant upfront costs for proprietary, bulky POS hardware terminals.',
-    solution: 'Architected an offline-first point-of-sale engine allowing cashiers to ring up sales and print receipts on standard tablets and smartphones without internet, paired with automated cloud sync, daily revenue analytics, and weekly backups.',
+    challenge: 'Retailers, coffee shops, and restaurants frequently struggle with 3 critical daily operational headaches: unmonitored stock leakage eating into margins, end-of-day drawer cash count errors between staff, and slow handwritten paper vouchers creating long customer wait queues.',
+    solution: 'Engineered Zantry POS as a high-speed offline and cloud system that stops stock leakage through real-time inventory deductions, eliminates cash count discrepancies with automated shift reconciliation, and replaces slow handwritten vouchers with instant 2-second thermal and digital receipts on any mobile device or tablet.',
     keyFeatures: [
+      'Stopping Stock Leakage: Automated item deduction per checkout with shrinkage alerts',
+      'Fixing Cash Count Errors: Automated shift cash-in/out and drawer balance reconciliation',
+      'Replacing Handwritten Vouchers: Instant Bluetooth & USB thermal receipt printing',
       'Security-First Offline Architecture: Full cashier functions without internet',
       'Multi-Platform Compatibility: Seamlessly runs on iOS, Android, Windows, Mac & Web',
-      'Live Revenue & Inventory Analytics: Shift cash-in/out tracking and comprehensive sales reports',
-      'Automated Weekly Cloud Backup with instant multi-branch data recovery',
+      'Live Revenue & Comprehensive Business Analytics with automated weekly cloud backups',
       'Flexible pricing models: Lite Version (200,000 MMK 1-time), Full Cloud (16 Lakh/yr), and On-Premise PC Security Setup (15 Lakh MMK)'
     ],
     contactInfo: {

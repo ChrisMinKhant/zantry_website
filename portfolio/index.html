@@ -151,10 +151,10 @@
 <li><a class="text-secondary hover:text-primary transition-all duration-300 font-label-md text-label-md" href="/contact/">Contact</a></li>
 </ul>
 <div class="flex items-center gap-2 sm:gap-4">
-<a href="/contact/" class="hidden sm:inline-block bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-sm">
+<a href="/contact/" class="hidden sm:inline-block bg-primary text-on-primary px-4 py-2 rounded-xl font-label-md text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm">
     Book Consultation
 </a>
-<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-full transition-colors cursor-pointer">
+<button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden flex items-center justify-center w-10 h-10 text-primary hover:bg-black/5 active:bg-black/10 rounded-xl transition-colors cursor-pointer">
 <span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
 </button>
 </div>
@@ -164,53 +164,53 @@
 <!-- Mobile Navigation Drawer -->
 <div id="mobileMenu" class="fixed inset-0 bg-surface/98 backdrop-blur-2xl z-40 transition-all duration-300 flex flex-col md:hidden opacity-0 invisible pointer-events-none px-6 pt-24 pb-8 overflow-y-auto">
   <ul class="flex flex-col items-center gap-2.5 w-full max-w-xs mx-auto">
-    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Home</a></li>
-    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Services</a></li>
-    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-2xl text-base font-bold text-primary bg-primary/10 transition-all">Portfolio</a></li>
-    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Process</a></li>
-    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-2xl text-base font-bold text-on-surface-variant hover:text-primary hover:bg-black/5 transition-all">Contact</a></li>
+    <li class="w-full text-center"><a href="/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Home</a></li>
+    <li class="w-full text-center"><a href="/services/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Services</a></li>
+    <li class="w-full text-center"><a href="/portfolio/" class="block py-3 px-5 rounded-xl text-base font-medium text-primary bg-primary/10 transition-colors">Portfolio</a></li>
+    <li class="w-full text-center"><a href="/process/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Process</a></li>
+    <li class="w-full text-center"><a href="/contact/" class="block py-3 px-5 rounded-xl text-base font-medium text-on-surface-variant hover:text-primary hover:bg-black/5 transition-colors">Contact</a></li>
   </ul>
   <div class="mt-6 w-full max-w-xs mx-auto text-center">
-    <a href="/contact/" class="block w-full bg-primary text-white py-3.5 px-6 rounded-full text-sm font-bold shadow-lg hover:opacity-90 active:scale-95 transition-all">
+    <a href="/contact/" class="block w-full bg-primary text-white py-3.5 px-6 rounded-xl text-sm font-medium shadow-sm hover:bg-primary/90 transition-colors">
       Book Consultation
     </a>
   </div>
 </div>
 
-<main class="pt-16 sm:pt-20">
+<main class="pt-16 sm:pt-20 bg-slate-50 min-h-screen">
 <!-- Hero Section -->
-<header class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-12 sm:py-16 md:py-20 text-center">
-<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-sm uppercase tracking-widest text-xs sm:text-label-sm mb-4 sm:mb-6">Case Studies</span>
-<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-bold text-primary mb-4 sm:mb-6 leading-tight tracking-tight">Selected Projects</h1>
-<p class="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-    Exploring the boundary of technical precision and aesthetic mastery. A showcase of engineering excellence across fintech, cloud, and digital commerce.
+<header class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter py-12 sm:py-16 text-center">
+<span class="inline-block bg-slate-200/70 text-slate-700 px-3 py-1 rounded-md text-xs font-medium mb-3">Portfolio &amp; Solutions</span>
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4 leading-tight tracking-tight">Selected Work</h1>
+<p class="font-body-md text-sm sm:text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+    A showcase of production point-of-sale systems, cashier applications, and custom engineering projects built for Myanmar businesses.
 </p>
 </header>
 
 <!-- Category Filters -->
 <section class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter mb-8 sm:mb-12">
-<div class="flex flex-wrap justify-center gap-2 sm:gap-3">
-<button class="filter-btn active px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="all">All</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="pos">Point of Sale (POS)</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="fintech">Fintech</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="ecommerce">E-commerce</button>
-<button class="filter-btn px-5 sm:px-6 py-2 rounded-full font-label-md text-xs sm:text-sm font-semibold border border-outline-variant hover:border-primary transition-all duration-300" data-filter="cloud">Cloud</button>
+<div class="flex flex-wrap justify-center gap-2">
+<button class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-slate-200 hover:border-primary transition-colors" data-filter="all">All</button>
+<button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-slate-200 hover:border-primary transition-colors" data-filter="pos">Point of Sale (POS)</button>
+<button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-slate-200 hover:border-primary transition-colors" data-filter="fintech">Fintech</button>
+<button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-slate-200 hover:border-primary transition-colors" data-filter="ecommerce">E-commerce</button>
+<button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium border border-slate-200 hover:border-primary transition-colors" data-filter="cloud">Cloud</button>
 </div>
 </section>
 
 <!-- Flagship Product Spotlight: Zantry POS Pro -->
 <section id="zantry-pos" class="max-w-container-max mx-auto px-4 sm:px-6 md:px-gutter mb-16 sm:mb-20">
-<div class="glass-card rounded-3xl border border-primary/20 overflow-hidden shadow-xl bg-gradient-to-b from-white via-surface to-surface-container-low p-6 sm:p-8 md:p-12 relative">
+<div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 sm:p-8 md:p-10 relative">
   <!-- Top Badge -->
-  <div class="flex flex-wrap items-center justify-between gap-4 mb-6 sm:mb-8 pb-6 border-b border-outline-variant/30">
+  <div class="flex flex-wrap items-center justify-between gap-4 mb-6 sm:mb-8 pb-5 border-b border-slate-200">
     <div class="flex items-center gap-2.5">
-      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider shadow-sm">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-primary text-white text-xs font-medium shadow-sm">
         Flagship Product
       </span>
-      <span class="text-xs sm:text-sm font-semibold text-secondary uppercase tracking-widest">Fintech & Retail Suite</span>
+      <span class="text-xs sm:text-sm font-medium text-slate-500">Retail &amp; Dining Suite</span>
     </div>
     <div class="flex items-center gap-3">
-      <a href="tel:09660227671" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:underline bg-primary/5 px-3 py-1.5 rounded-full">
+      <a href="tel:09660227671" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:underline bg-slate-100 px-3 py-1.5 rounded-lg">
         <span class="material-symbols-outlined text-base">call</span> 09660227671 / 09790383481
       </a>
     </div>
@@ -318,6 +318,54 @@
           <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-emerald-600">check</span> 3-Month to 1-Year Support</span>
           <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-emerald-600">check</span> Free Consultation</span>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 Biggest Daily Headaches Solved -->
+  <div class="mt-8 pt-8 border-t border-outline-variant/30">
+    <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+      <span class="inline-block bg-primary/10 text-primary px-3.5 py-1 rounded-full font-label-sm text-xs font-bold uppercase tracking-wider mb-2">
+        Operational Control
+      </span>
+      <h3 class="text-xl sm:text-2xl font-bold text-primary">Solving Your 3 Biggest Daily Store Headaches</h3>
+      <p class="text-xs sm:text-sm text-on-surface-variant mt-1">
+        Built specifically to protect your store margins, eliminate cashier balance disputes, and accelerate checkout speed.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-2">
+      <!-- Problem 1: Stock Leakage -->
+      <div class="p-5 rounded-2xl bg-surface border border-outline-variant/40 hover:border-amber-500/40 transition-colors">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-3">
+          <span class="material-symbols-outlined text-2xl">inventory_2</span>
+        </div>
+        <h4 class="text-sm sm:text-base font-bold text-primary mb-1.5">Stopping Stock Leakage</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          Automated item deduction per sale with live low-stock warnings. Real-time audit logs identify missing items, shrinkage, and theft immediately.
+        </p>
+      </div>
+
+      <!-- Problem 2: Cash Count Errors -->
+      <div class="p-5 rounded-2xl bg-surface border border-outline-variant/40 hover:border-emerald-500/40 transition-colors">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-3">
+          <span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+        </div>
+        <h4 class="text-sm sm:text-base font-bold text-primary mb-1.5">Fixing Daily Cash Count Errors</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          Automated shift cash-in and cash-out reconciliation ensures cashier drawer counts perfectly match digital sales summaries every single day.
+        </p>
+      </div>
+
+      <!-- Problem 3: Slow Handwritten Vouchers -->
+      <div class="p-5 rounded-2xl bg-surface border border-outline-variant/40 hover:border-blue-500/40 transition-colors">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-3">
+          <span class="material-symbols-outlined text-2xl">receipt_long</span>
+        </div>
+        <h4 class="text-sm sm:text-base font-bold text-primary mb-1.5">Replacing Slow Handwritten Vouchers</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          Instantly print professional thermal receipts or generate digital vouchers via Bluetooth printer. Eliminate customer wait lines and handwriting mistakes.
+        </p>
       </div>
     </div>
   </div>
